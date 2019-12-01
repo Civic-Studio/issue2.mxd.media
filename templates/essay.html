@@ -2,53 +2,52 @@
 <head>
   {% block head %}
       <title>{% block title %}{% endblock %} - Issue #2 | Mixed Media </title>
-      <link rel="stylesheet" href="https://cdn.mxd.media/stylesheet.css">
-      <script src="https://unpkg.com/vue/dist/vue.js"></script>
+      {% include "includes/components/head-tag.html" %}
   {% endblock %}
 </head>
 <body>
-  {% include 'nav.html' %}
+  {% include 'includes/components/nav.html' %}
   <div id="app">
     <div class="essay-wrapper">
       {% if title == "pump-station-operators-individual" %}
         
-        {% include 'pump-station-operators-individual.html' %}
+        {% include 'includes/essays/pump-station-operators-individual.html' %}
 
       {% elif title == 'pump-station-operators-team' %}
 
-        {% include 'pump-station-operators-team.html' %}
+        {% include 'includes/essays/pump-station-operators-team.html' %}
 
       {% elif title == 'what-does-a-pump-station-do' %}
 
-        {% include 'what-does-a-pump-station-do.html' %}
+        {% include 'includes/essays/what-does-a-pump-station-do.html' %}
 
       {% elif title == 'keeping-the-pumps-running' %}
 
-        {% include 'keeping-the-pumps-running.html' %}
+        {% include 'includes/essays/keeping-the-pumps-running.html' %}
 
       {% elif title == 'day-after-a-storm' %}
 
-        {% include 'day-after-a-story.html' %}
+        {% include 'includes/essays/day-after-a-story.html' %}
 
       {% elif title == 'evening-at-station-d' %}
 
-        {% include 'evening-at-station-d.html' %}
+        {% include 'includes/essays/evening-at-station-d.html' %}
 
       {% elif title == 'challenges' %}
 
-        {% include 'challenges.html' %}
+        {% include 'includes/essays/challenges.html' %}
 
       {% elif title == 'water-creature' %}
 
-        {% include 'water-creature.html' %}
+        {% include 'includes/essays/water-creature.html' %}
 
       {% else %}
 
-        {% include 'need-an-essay.html' %}
+        {% include 'includes/essays/need-an-essay.html' %}
 
       {% endif %}
 
-      {% include "bottom-sheet.html" with context %}
+      {% include "includes/components/bottom-sheet.html" with context %}
     </div>
   </div>
 </body>

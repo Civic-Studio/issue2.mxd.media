@@ -2,11 +2,11 @@
 <head>
   {% block head %}
       <title>{% block title %}{% endblock %} - Issue #2 | Mixed Media </title>
-      <link rel="stylesheet" href="https://cdn.mxd.media/stylesheet.css">
+      {% include "includes/components/head-tag.html" %}
   {% endblock %}
 </head>
 <body>
-  {% include "nav.html" %}
+  {% include "includes/components/nav.html" %}
   <div id="app">
     <h1>Photo Essays</h1>
     <div class="home-wrapper">

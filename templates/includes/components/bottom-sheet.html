@@ -9,14 +9,14 @@
 			<div class="bottom-sheet-row-2">
 				<div class="art-gallery-nav-description-container" v-show="bottomSheetOpen">
 					<p>
-						Who are the people that run the city’s drainage pump stations, twenty four hours a day? We spoke with operators at four different stations, and got to know them as individuals. As proud parents and trumpet players, power lifters and auto mechanics, and as philosophers and Uber drivers -- they are each striving to make a living and to provide for their families. As Utility Plant Worker Rob Barrow put it, working at the Sewerage and Water Board is also “a chance to help the city.” 
+						Who are the people that run the city’s drainage pump stations, twenty four hours a day? We spoke with operators at four different stations, and got to know them as individuals. As proud parents and trumpet players, power lifters and auto mechanics, and as philosophers and Uber drivers -- they are each striving to make a living and to provide for their families. As Utility Plant Worker Rob Barrow put it, working at the Sewerage and Water Board is also “a chance to help the city.”
 					</p>
 					<p>
 						A few common threads emerged.
 					</p>
 					<p>
 						The first is that the SWBNO provides good job opportunities in a city where so many residents otherwise only have access to low-paying service and tourism jobs. Relief Operator Larry Boudreaux shares: “If you’re a convicted felon and you have a high school diploma, you can still get a job [...] and you can make 40K, 60K, 80K, 100K. Where else can you do that?”
-					</p> 
+					</p>
 					<p>
 						The second is that the operators see themselves as emergency personnel, their work vital to the safety of their fellow New Orleanians. Of the many sacrifices that operators make, the most significant is that each is asked to leave their families to report to work when tropical storms bear down on the region. As Utility Plant Worker Louis Johnston shares, “Family have to be responsible over there, when I have to be here.”
 					</p>
@@ -51,10 +51,15 @@
 </div>
 
 <script type="text/javascript">
-	new Vue({
-		el: '#bottom-sheet',
-		data: {
-			bottomSheetOpen: false
-		}
-	})
+	if (typeof Vue === 'undefined') {
+		var sheetEl = document.getElementById('bottom-sheet');
+		sheetEl.remove();
+	} else {
+		new Vue({
+			el: '#bottom-sheet',
+			data: {
+				bottomSheetOpen: false
+			}
+		});
+	}
 </script>
