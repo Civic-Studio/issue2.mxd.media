@@ -55,7 +55,6 @@ body {
 	text-decoration: none;
     color: #f8f8f8;
     background-size: cover;
-    width: 100%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: grey;
@@ -300,13 +299,12 @@ body {
 
 .essay-wrapper {
 	display: flex;
-	justify-content: center;
 	flex-flow: wrap;
 	align-items: center;
 }
 
 .essay-wrapper h1 {
-	padding-left: 12px;
+	padding-left: 24px;
     color: #aaa;
     font-weight: 200;
     text-transform: uppercase;
@@ -341,9 +339,7 @@ body {
 
 .essay-wrapper article blockquote {
 	font-size: 24px;
-    background-color: rgba(0,0,0,.6);
-    color: white;
-    padding: 100px;
+    color: black;
     margin: 50px 0;
 }
 

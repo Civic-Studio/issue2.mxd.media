@@ -24,14 +24,14 @@
         "description": "Water falls from sky into storm drains...",
         "background_image": "https://cdn.mxd.media/what-does-pump-do/5c.jpg",
         "link": "/essay/what-does-a-pump-station-do",
-        "flex_val": 2
+        "flex_val": 3
       },
       {
         "title": "Keeping the Pumps Running",
-        "description": "Can't stop won't stop",
+        "description": "Can't stop won't stop!",
         "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
         "link": "/essay/keeping-the-pumps-running",
-        "flex_val": 2
+        "flex_val": 1
       }
     ]
   },
@@ -39,14 +39,14 @@
     "row": [
       {
         "title": "Day After a Storm",
-        "description": "Our team visited right after a storm.",
+        "description": "Our team visited right after a storm",
         "background_image": "https://cdn.mxd.media/day-after-storm/2a.jpg",
         "link": "/essay/day-after-a-storm",
         "flex_val": 3
       },
       {
         "title": "Evening at Station D",
-        "description": "paintings by Anne Nelson",
+        "description": "The complexity of machinery",
         "background_image": "https://cdn.mxd.media/day-after-storm/2a.jpg",
         "link": "/essay/evening-at-station-d",
         "flex_val": 2
@@ -57,16 +57,16 @@
     "row": [
       {
         "title": "Challenges",
-        "description": "paintings by Anne Nelson",
-        "background_image": "https://cdn.mxd.media/swbno-1/2.jpg",
+        "description": "Life of the pumps can be hard",
+        "background_image": "https://cdn.mxd.media/challenges/1b.jpg",
         "link": "/essay/challenges",
         "flex_val": 2
       },
       {
         "title": "Water Creature",
-        "description": "paintings by Anne Nelson",
-        "background_image": "https://cdn.mxd.media/swbno-1/2.jpg",
-        "link": "/essay/water-creature",
+        "description": "New creatures in Bayou St. John",
+        "background_image": "https://cdn.mxd.media/water-creature/1a.jpg",
+        "link": "/essay/water-creatures",
         "flex_val": 4
       }
     ]

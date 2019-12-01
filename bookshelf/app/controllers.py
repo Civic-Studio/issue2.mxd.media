@@ -6,8 +6,9 @@ main = Blueprint('main', __name__, template_folder='../../templates', static_fol
 @main.route('/')
 def show_index():
 	current_path = os.getcwd()
-	home_page = json.load(open(current_path + '/json/home.json'))
-	return render_template('index.html', home_page=home_page)
+	home_page_essays = json.load(open(current_path + '/json/essays.json'))
+	home_page_galleries = json.load(open(current_path + '/json/galleries.json'))
+	return render_template('index.html', home_page_essays=home_page_essays, home_page_galleries=home_page_galleries)
 
 @main.route('/essay/<title>')
 def show_essays(title=None):
