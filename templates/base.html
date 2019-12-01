@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+  {% block head %}
+      <title>{% block title %}{% endblock %} - Issue #2 | Mixed Media </title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+  {% endblock %}
+</head>
+<body>
+  {% include "nav.html" %}
+  <div class="base-wrapper">
+    <section>
+      <header>
+        {% block header %}{% endblock %}
+      </header>
+      <div>
+        {% block content %}{% endblock %}
+      </div>
+    </section>
+  </div>
+</body>

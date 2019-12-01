@@ -1,0 +1,74 @@
+[
+  {
+    "row": [
+      {
+        "title": "Pump Station Operators",
+        "description": "Individuals",
+        "background_image": "https://cdn.mxd.media/pump-operators-individual/1a.jpg",
+        "link": "/essay/pump-station-operators-individual",
+        "flex_val": 2
+      },
+      {
+        "title": "Pump Station Operators",
+        "description": "Teamwork & Coordination",
+        "background_image": "https://cdn.mxd.media/pump-operators-team/1a.jpg",
+        "link": "/essay/pump-station-operators-team",
+        "flex_val": 2
+      }
+    ]
+  },
+  {
+    "row": [
+      {
+        "title": "What Does a Pump Station Do?",
+        "description": "Water falls from sky into storm drains...",
+        "background_image": "https://cdn.mxd.media/what-does-pump-do/5c.jpg",
+        "link": "/essay/what-does-a-pump-station-do",
+        "flex_val": 2
+      },
+      {
+        "title": "Keeping the Pumps Running",
+        "description": "Can't stop won't stop",
+        "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
+        "link": "/essay/keeping-the-pumps-running",
+        "flex_val": 2
+      }
+    ]
+  },
+  {
+    "row": [
+      {
+        "title": "Day After a Storm",
+        "description": "Our team visited right after a storm.",
+        "background_image": "https://cdn.mxd.media/day-after-storm/2a.jpg",
+        "link": "/essay/day-after-a-storm",
+        "flex_val": 3
+      },
+      {
+        "title": "Evening at Station D",
+        "description": "paintings by Anne Nelson",
+        "background_image": "https://cdn.mxd.media/day-after-storm/2a.jpg",
+        "link": "/essay/evening-at-station-d",
+        "flex_val": 2
+      }
+    ]
+  },
+  {
+    "row": [
+      {
+        "title": "Challenges",
+        "description": "paintings by Anne Nelson",
+        "background_image": "https://cdn.mxd.media/swbno-1/2.jpg",
+        "link": "/essay/challenges",
+        "flex_val": 2
+      },
+      {
+        "title": "Water Creature",
+        "description": "paintings by Anne Nelson",
+        "background_image": "https://cdn.mxd.media/swbno-1/2.jpg",
+        "link": "/essay/water-creature",
+        "flex_val": 4
+      }
+    ]
+  }
+]
