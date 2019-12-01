@@ -349,10 +349,19 @@ body {
 }
 
 .essay-wrapper article blockquote {
-	font-size: 24px;
+	font-size: 32px;
     color: #000;
     margin: 50px 0;
     padding-left: 12px;
+    font-style: italic;
+    font-family: serif;
+}
+
+.essay-wrapper article blockquote span {
+	font-size: 21px;
+    font-style: normal;
+    text-align: right;
+    display: block;
 }
 
 .essay-wrapper article figcaption,
@@ -540,11 +549,10 @@ figcaption.side-by-side {
 /* Nav */
 nav {
 	margin-top: 20px;
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 10px;
-	align-items: center;
-	padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 nav img {
