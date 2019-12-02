@@ -42,7 +42,7 @@ body {
     color: #f8f8f8;
     text-shadow: 1px 1px 1px black;
     padding: 0px 10px;
-    margin: 15px;
+    margin: 24px;
     position: relative;
 }
 
@@ -269,10 +269,6 @@ body {
 
 /* Wrapper */
 
-.base-wrapper h1 {
-	font-size: 2.25em;
-}
-
 .base-wrapper p {
 	font-size: 1.2em;
 }
@@ -305,7 +301,7 @@ body {
     color: #aaa;
     font-weight: 200;
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 48px;
     position: relative;
 }
 
@@ -344,6 +340,7 @@ body {
 }
 
 .essay-wrapper article blockquote {
+	max-width: 980px;
 	font-size: 32px;
     color: #000;
     margin: 50px 0;
@@ -536,29 +533,66 @@ figcaption.side-by-side {
     color: #ccc;
     font-weight: 100;
     text-transform: uppercase;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 24px;
+    margin-top: 48px;
     margin-bottom: 0;
-    font-size: 1.5em;
 }
 
 /* Nav */
 nav {
 	margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
+    padding: 12px;
 }
 
 nav img {
 	height: 45px;
 }
 
+nav .menu-container {
+	display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
 nav a {
 	text-decoration: none;
-    text-transform: uppercase;
-    color: black;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 200;
+	padding: 0 0 0 20px;
+}
+
+/* Essay Nav */
+
+.essay-nav-container {
+    background-color: #f8f8f8;
+    padding: 24px;
+}
+
+.essay-nav-container h3 {
+	font-size: 16px;
     font-weight: 200;
+    text-transform: uppercase;
+}
+
+.essay-nav-container ul {
+	display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.essay-nav-container li {
+	padding: 20px 20px 20px 0;
+}
+
+.essay-nav-container li a {
+	font-weight: 200;
+	color: black;
 }
 
 .art-gallery-nav-container {
