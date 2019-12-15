@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+  {% block head %}
+      <title>{% block title %}{% endblock %} - Issue #2 | Mixed Media </title>
+      {% include "includes/components/head-tag.html" %}
+  {% endblock %}
+</head>
+<body>
+  {% include "includes/components/nav.html" %}
+  <div id="app">
+    <div class="home-wrapper">
+      {% for rows in home_page_essays %}
+        <div class="home-row">
+          <div class="row">
+            {% for item in rows.row %}
+              <a 
+                href="{{ item.link }}" 
+                class="series-titles" 
+                style="background-image:url({{item.background_image}});flex:{{item.flex_val}}"
+              >
+                <h1>{{item.title}}</h1>
+                <p>{{item.description}}</p>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</body>

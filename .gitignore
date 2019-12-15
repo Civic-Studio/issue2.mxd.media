@@ -1,8 +1,12 @@
+*.csr
+*.key
+*.crt
 *.py[co]
 *.DS_*
 # Packages
 *.egg
 *.egg-info
+node_modules
 dist
 build
 eggs
