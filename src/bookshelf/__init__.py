@@ -4,7 +4,23 @@ from bookshelf.app.controllers import main
 
 # CSP and Enforce HTTPS
 from flask_talisman import Talisman
-from csp import csp
+csp = {
+    'default-src': [
+        '\'self\'',
+        '*.mxd.media'
+    ],
+    'img-src': '*.mxd.media',
+    'style-src': [
+    	'\'self\'',
+    	'https://fonts.googleapis.com',
+    	'\'unsafe-inline\''
+    ],
+    'font-src': [
+    	'\'self\'',
+    	'https://fonts.gstatic.com'
+    ]
+}
+
 
 app = Flask(__name__, static_folder=None)
 app.register_blueprint(main, url_prefix='')
