@@ -1,5 +1,6 @@
 Click==7.0
 Flask==1.1.1
+flask-talisman==0.7.0
 gunicorn==19.10.0
 itsdangerous==1.1.0
 Jinja2==2.10.3
