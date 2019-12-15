@@ -18,6 +18,10 @@ csp = {
     'font-src': [
     	'\'self\'',
     	'https://fonts.gstatic.com'
+    ],
+    'script-src': [
+        '\'self\'',
+        '\'unsafe-inline\''  
     ]
 }
 
