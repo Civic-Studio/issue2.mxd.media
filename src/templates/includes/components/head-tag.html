@@ -4,12 +4,3 @@
 {% if request.script_root in ('/essay', '/gallery')  %}
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 {% endif %}
-
-<script type="text/javascript">
-	var hamburger = document.getElementById('hamburger');
-	var menu = document.getElementById('menu');
-	hamburger.onclick = function(e) {
-		menu.classList.toggle('hidden');
-		hamburger.classList.toggle('open')
-	}
-</script>
