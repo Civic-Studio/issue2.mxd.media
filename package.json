@@ -13,6 +13,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3"
   },
   "scripts": {
+    "start": "python ./src/run.py",
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
