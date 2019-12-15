@@ -541,7 +541,6 @@ figcaption.side-by-side {
 /* Nav */
 nav {
 	margin-top: 20px;
-    display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
@@ -552,7 +551,13 @@ nav img {
 	height: 45px;
 }
 
-nav .menu-container {
+nav.desktop .menu-container {
+	display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+nav.mobile .menu-container {
 	display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -565,6 +570,81 @@ nav a {
 	font-weight: 200;
 	padding: 0 0 0 20px;
 }
+
+/* Desktop Nav */
+@media screen and (min-width: 800px) {
+	nav.mobile {
+		display: none;
+	}
+	nav.desktop {
+		display: flex;
+	}
+}
+
+/* Mobile Nav */
+@media screen and (max-width: 800px) {
+	nav.mobile {
+		display: flex;
+	}
+
+	nav.desktop {
+		display: none;
+	}
+
+	#hamburger {
+		width: 44px;
+		display: block;
+		cursor: pointer;
+	}
+
+	#hamburger span {
+		cursor: pointer;
+	}
+
+	#hamburger span {
+		max-width: 100%;
+	  	height: 2px;
+	  	background-color: black;
+	  	margin: 10px 0;
+	  	display: block;
+	}
+
+	#hamburger.open span:nth-child(1) {
+		transform: rotate(135deg);
+		-webkit-transform: rotate(135deg);
+		-moz-transform: rotate(135deg);
+	  	-o-transform: rotate(135deg);
+	  	margin: -2px 0;
+	}
+
+	#hamburger.open span:nth-child(2) {
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+		-moz-transform: rotate(-135deg);
+	  	-o-transform: rotate(-135deg);
+	  	margin: -2px 0;
+	}
+
+	#hamburger.open span:nth-child(3) {
+		display: none;
+	}
+
+	#menu {
+		position: absolute;
+	    right: 12px;
+	    z-index: 9;
+	    background-color: #f8f8f8;
+	    padding: 20px 20px 10px 0;
+	    list-style: none;
+	    line-height: 45px;
+	    margin-top: 25px;
+	}
+
+	#menu.hidden {
+		display: none;
+	}
+}
+
 
 /* Essay Nav */
 

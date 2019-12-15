@@ -1,14 +1,49 @@
-<nav>
+<nav class="desktop">
 	<img src="https://cdn.mxd.media/partners/mm.png">
 	<div class="menu-container">
 		<a href="/">Project</a>
 		<a href="/artists">Artists</a>
-		<a> 
+		<a href="/exhibit">Exhibit</a>
+		<a href="/purchase">Purchase Artwork</a>
+		<span> 
 			More
 			<ul>
-				<li>Exhibit</li>
-				<li>Purchase Artwork</li>
+				<li><a href="/exhibit">Exhibit</a></li>
+				<li><a href="/purchase">Purchase Artwork</a></li>
 			</ul>
-		</a>
+		</span>
 	</div>
 </nav>
+<nav class="mobile">
+	<img src="https://cdn.mxd.media/partners/mm.png">
+	<div>
+		<span id="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul id="menu" class="hidden">
+			<li>
+				<a href="/">Project</a>
+			</li>
+			<li>
+				<a href="/artists">Artists</a>
+			</li>
+			<li>
+				<a href="/exhibit">Exhibit</a>
+			</li>
+			<li>
+				<a href="/purchase">Purchase Artwork</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<script type="text/javascript">
+	var hamburger = document.getElementById('hamburger');
+	var menu = document.getElementById('menu');
+	hamburger.onclick = function(e) {
+		menu.classList.toggle('hidden');
+		hamburger.classList.toggle('open')
+	}
+</script>
