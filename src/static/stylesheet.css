@@ -51,7 +51,7 @@ body {
     margin: 0px;
     font-style: italic;
     font-family: serif;
-    padding: 100px;
+    padding: 24px;
     align-items: center;
     justify-content: center;
     border-top: 1px solid rgba(0,0,0,.1);
@@ -71,7 +71,7 @@ body {
 
 .intro-tiles .row p {
 	max-width: 620px;
-	margin: 24px auto;
+	margin: 24px;
 	font-weight: 100;
 }
 
@@ -410,11 +410,11 @@ body {
 
 .essay-wrapper article figure {
 	padding: 0;
-    display: flex;
-    margin: 24px;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	margin: 12px;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .essay-wrapper article img {
@@ -452,7 +452,7 @@ body {
     margin: 0px;
     font-style: italic;
     font-family: serif;
-    padding: 100px;
+    padding: 24px;
     align-items: center;
     justify-content: center;
     border-top: 1px solid rgba(0,0,0,.1);
@@ -767,9 +767,10 @@ nav a {
 
 footer {
 	margin: 12px;
-    padding: 12px;
-    border: 1px solid rgba(0,0,1,0.1);
-    width: 100%;
+	padding: 12px;
+	border: 1px solid rgba(0,0,1,0.1);
+	background-color: rgb(70, 130, 180);
+	color: white;
 }
 
 footer img {
