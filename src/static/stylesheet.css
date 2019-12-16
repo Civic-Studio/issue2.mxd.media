@@ -45,6 +45,11 @@ body {
     text-align: center;
 }
 
+article.blockquote-container {
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
 .intro-tiles article blockquote {
 	font-size: 32px;
     color: #000;
@@ -54,8 +59,6 @@ body {
     padding: 24px;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid rgba(0,0,0,.1);
-    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .intro-tiles {
@@ -71,7 +74,7 @@ body {
 
 .intro-tiles .row p {
 	max-width: 620px;
-	margin: 24px;
+	margin: 24px auto;
 	font-weight: 100;
 }
 
@@ -457,8 +460,6 @@ body {
     padding: 24px;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid rgba(0,0,0,.1);
-    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .essay-wrapper article blockquote span {
