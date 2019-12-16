@@ -404,13 +404,14 @@ article.blockquote-container {
     text-align: left;
 }
 
-.essay-wrapper article.text-content {
+article.text-content {
 	margin: 12px 24px;
 	padding: 24px;
 }
 
 .essay-wrapper article.text-content p {
 	max-width: 620px;
+	font-weight: 200;
 }
 
 .essay-wrapper article figure {
