@@ -36,6 +36,76 @@ body {
     width: 100%;
 }
 
+.intro-tiles h1 {
+	margin: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+}
+
+.intro-tiles article blockquote {
+	font-size: 32px;
+    color: #000;
+    margin: 0px;
+    font-style: italic;
+    font-family: serif;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.intro-tiles {
+	display: flex;
+	flex: row;
+	border: solid 1px rgba(0,0,1,.2)
+}
+
+.intro-tiles .row {
+	display: flex;
+	flex-flow: column;
+}
+
+.intro-tiles .row p {
+	max-width: 620px;
+	margin: 24px auto;
+	font-weight: 100;
+}
+
+.intro-tiles .row ul {
+	padding: 10px;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-flow: wrap;
+	border-top: rgba(0,0,1,.1) solid 1px;
+	border-bottom: rgba(0,0,1,.1) solid 1px;
+}
+
+.intro-tiles .row ul li {
+	display: flex;
+    background-color: rgb(70, 130, 180);
+    color: white;
+    font-family: serif;
+    padding: 12px;
+    margin: 6px;
+    max-width: 600px;
+    flex-flow: column;
+    font-size: 12px;
+}
+
+.intro-tiles .row ul li b {
+	display: block;
+	text-transform: uppercase;
+}
+
+.intro-tiles .row ul li span {
+	display: block;
+}
+
 .series-titles {
 	text-transform: uppercase;
     color: #eeeeee;
@@ -62,7 +132,6 @@ body {
 }
 
 .series-titles:hover {
-	box-shadow: 1px 1px 10px grey;
 	background-blend-mode: luminosity;
 }
 
@@ -292,7 +361,7 @@ body {
     margin: 12px;
 }
 
-.essay-wrapper {
+.essay-wrapper, .home-wrapper {
 	border: 1px solid rgba(0,0,0,.1)
 }
 
@@ -311,6 +380,16 @@ body {
     font-size: 12px;
     top: -15px;
     left: 25px;
+}
+
+.essay-wrapper h2 {
+	font-weight: 200;
+	font-size: 16px;
+	padding-left: 24px;
+}
+
+.essay-wrapper p {
+	padding-left: 24px;
 }
 
 .essay-wrapper article {
