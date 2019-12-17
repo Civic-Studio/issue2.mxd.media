@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
   {% block head %}
-      <title>{% block title %}{% endblock %} - Issue #2 | Mixed Media </title>
+      <title>Mixed Media: Water Systems - Issue #2 | Mixed Media </title>
       {% include "includes/components/head-tag.html" %}
   {% endblock %}
 </head>
@@ -40,63 +40,65 @@
             Along the way, we have hosted a series of public events, providing opportunities for learning, dialogue, and co-creation on the themes of Water Systems.
           </p>
           <p>
-            <ul>
+            <ol>
               <li>
                 <b>“Water Series” Exhibition Opening and Public Dialogue</b>
-                <span>with Anne Nelson</span>
+                <span>with <u>Anne Nelson</u></span>
               </li>
               <li>
                 <b>
                 Coffee and Conversation on Groundwater, Soils, and Fungus
                 </b>
-                <span>with Stephanie Gross and Roelof Stuurman</span>
+                <span>with <u>Stephanie Gross</u> and <u>Roelof Stuurman</u></span>
               </li>
               <li>
                 <b>Coffee and Conversation on Mosquitoes and Water Management</b>
-                <span>with Sarah Michaels</span>
+                <span>with <u>Sarah Michaels</u></span>
               </li>
               <li>
                 <b>Water Rube Goldberg Day</b>
-                <span>with the Green Project</span>
+                <span>with the <u>Green Project</u></span>
               </li>
               <li>
                 <b>
                 Coffee and Conversation on Making and Selling Art</b>
-                <span>with Cy Henry and Carole Alden</span>
+                <span>with <u>Cy Henry</u> and <u>Carole Alden</u></span>
               </li>
               <li>
-                <b>Coffee and Conversation on the Afterlife of FEMA Trailers</b><span> with Nick Shapiro</span>
+                <b>Coffee and Conversation on the Afterlife of FEMA Trailers</b>
+                <span> with <u>Nick Shapiro</u></span>
               </li>
               <li>
                 <b>
                 Coffee and Conversation on Policy and Effective Interventions
-                </b><span>with Tess Lea</span>
+                </b><span>with <u>Tess Lea</u></span>
               </li>
               <li>
                 <b>
                 Screening and Discussion of the Multi-platform Documentary, The Mississippi</b>
-                <span>with Keely Kernan</span>
+                <span>with <u>Keely Kernan</u></span>
               </li>
               <li>
                 <b>
                 Poetry Reading and Discussion
-                </b><span>with Kalamu Ya Salaam</span>
+                </b><span>with <u>Kalamu Ya Salaam</u></span>
               </li>
               <li>
                 <b>
-                Coffee and Conversation on the Urban Water Plan</b><span>with David Waggonner
+                Coffee and Conversation on the Urban Water Plan</b>
+                <span>with <u>David Waggonner</u>
                 </span>
               </li>
               <li>
                 <b>
                 Coffee and Conversation on Sustainable Water Management in Gentilly </b>
-                <span>with Daan Rooze</span>
+                <span>with <u>Daan Rooze</u></span>
               </li>
-              <!--                   <li>
+              <li>
                 <b>
-                “Moving Water” Exhibition Opening</b> <span> with CFreedom, Maggie Hermann, Sewerage & Water Board Pump Station Operators, and new music by Sly Watts
-                </li> -->
-              </ul>
+                “Moving Water” Exhibition Opening</b> <span> with <u>CFreedom</u>, <u>Maggie Hermann</u>, Sewerage & Water Board Pump Station Operators, and new music by <u>Sly Watts</u>
+                </li>
+              </ol>
             </p>
             <p>
               This feature is a part of MIXED MEDIA, a multidisciplinary initiative by the Blue House / Civic Studio that supports civic dialog on critical issues through art, research, and storytelling. Visit issue1.mxd.media for MIXED MEDIA: INCARCERATION.
@@ -124,5 +126,10 @@
           </div>
         </div>
       {% endfor %}
-  {% include "includes/components/footer.html" %}
+    </div>
+    <div class="intro-tiles exhibit-wrapper">
+      {% include "includes/components/exhibit.html" %}
+    </div>
 </body>
+
+{% include "includes/components/script.html" %}

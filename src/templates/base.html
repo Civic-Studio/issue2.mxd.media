@@ -7,15 +7,13 @@
 </head>
 <body>
   {% include "includes/components/nav.html" %}
-  <div class="base-wrapper">
-    <section>
-      <header>
-        {% block header %}{% endblock %}
-      </header>
-      <div>
+  <div id="app">
+    <div class="base-wrapper">
+      <div class="row">
         {% block content %}{% endblock %}
       </div>
-    </section>
+    </div>
   </div>
-  {% include "includes/components/footer.html" %}
 </body>
+
+{% include "includes/components/script.html" %}
