@@ -1,5 +1,21 @@
 {% extends 'base.html' %}
 
+{% block metadata_name %}
+
+	{% for key, item in metadata_name.items() %}
+	    <meta name="{{ key }}" content="{{ item }}" />
+	{% endfor %}
+
+{% endblock %}
+
+{% block metadata_property %}
+
+	{% for key, item in metadata_property.items() %}
+	    <meta property="{{ key }}" content="{{ item }}" />
+	{% endfor %}
+
+{% endblock %}
+
 {% block content %}
 	<div class="intro-tiles">
 	  <div class="row">
@@ -98,6 +114,5 @@
 	        </p>
 	      </article>
 	    </div>
-	  </div>
-	
+	  </div>	
 {% endblock %}
