@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:300,400,600,700&display=swap');
 
+html {
+	height: 100%;
+}
+
 body {
+	min-height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: 'Open Sans';
+	position: relative;
 }
 
 /* Home Link */
@@ -63,11 +69,17 @@ article.blockquote-container {
     max-width: 620px;
 }
 
-.intro-tiles, .base-wrapper {
+.intro-tiles {
 	display: flex;
-	border-top: solid 1px rgba(0,0,1,.2);
-	border-left: solid 1px rgba(0,0,1,.2);
-	border-right: solid 1px rgba(0,0,1,.2);
+	width: 100%;
+	flex-flow: column;
+}
+
+.base-wrapper {
+	display: flex;
+	border: solid 1px rgba(0,0,1,.2);
+	border: solid 1px rgba(0,0,1,.2);
+	border: solid 1px rgba(0,0,1,.2);
 	width: 100%;
 	flex-flow: column;
 }
@@ -92,7 +104,7 @@ article.blockquote-container {
 }
 
 .intro-tiles .row ol {
-	padding: 10px;
+	padding: 10px 10px 0px 48px;
 	margin: auto;
 	max-width: 400px;
 }
@@ -369,6 +381,7 @@ article.blockquote-container {
     align-items: center;
     background: white;
     margin: 12px;
+    padding-bottom: 200px;
 }
 
 .essay-wrapper, .home-wrapper {
@@ -378,7 +391,8 @@ article.blockquote-container {
 }
 
 .essay-wrapper h1 {
-	padding: 0px 24px 24px;
+	text-align: center;
+    padding-bottom: 24px;
     color: #aaa;
     font-weight: 200;
     text-transform: uppercase;
@@ -392,7 +406,6 @@ article.blockquote-container {
     content: 'PHOTO ESSAY';
     font-size: 12px;
     top: -15px;
-    left: 25px;
 }
 
 .essay-wrapper h2 {
@@ -409,12 +422,12 @@ article.blockquote-container {
 	display: flex;
     justify-content: center;
     flex-flow: column wrap;
-    align-items: center;
     text-align: left;
 }
 
 article.text-content {
-	margin: 12px 24px;
+	max-width: 620px;
+	margin: 12px auto;
 	padding: 24px;
 }
 
@@ -458,13 +471,15 @@ article.text-content {
 	font-size: 16px;
 	max-width: 620px;
 	padding: 24px;
+	font-weight: 200;
 	border: 1px solid rgba(0,0,0,.1);
 }
 
 .essay-wrapper article blockquote {
 	font-size: 32px;
     color: #000;
-    margin: 0px;
+    margin: auto;
+    max-width: 620px;
     font-style: italic;
     font-family: serif;
     padding: 24px;
@@ -841,6 +856,16 @@ footer div {
 	flex-flow: row wrap;
 	align-items: center;
 	justify-content: space-around;
+}
+
+.simple-footer {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: rgb(70, 130, 180);
 }
 
 

@@ -27,6 +27,10 @@ def show_about():
 def show_artists():
     return render_template('artists.html')
 
-@main.route('/projects')
+@main.route('/project')
 def show_projects():
 	return render_template('project.html')
+
+@main.route('/purchase')
+def show_purchase():
+	return render_template('purchase.html')
