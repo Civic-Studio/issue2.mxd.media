@@ -364,6 +364,17 @@ figcaption.side-by-side {
 
 }
 
+/* --- Gallery --- */
+
+.gallery-wrapper h1 {
+	padding-left: 24px;
+    color: #aaa;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 48px;
+    position: relative;
+}
+
 /* --- Special Gallery Item -- */
 
 .special-gallery-item {

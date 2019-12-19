@@ -1,0 +1,54 @@
+<div id="vue-app">
+	<div class="gallery-wrapper">
+		<div class="art-gallery-item" v-for="(art, index) in galleryArray()" v-show="showArt(index)">
+			<span id="back-item-gallery" v-if="art.type !== 'special+gallery+item'" v-on:click="chooseArt(index - 1)"><</span>
+			<div class="special-gallery-item" v-if="art.type === 'special+gallery+item'">
+				<div class="mini-gallery">
+					<figure v-for="(k,v) in art.imgColumn">
+						<img v-for="i in k.img" v-bind:src="url(i)">
+						<caption v-if="k.text">[[k.text]]</caption>
+					</figure>
+				</div>
+			</div>
+			<div class="portrait-image-quote" v-if="art.type === 'portrait+image+quote'">
+				<figure>
+					<img v-bind:src="url(art.imgUrl)">
+					<figcaption>
+					[[art.title]]
+					<br>
+					[[art.artistName]]
+					<br>
+					[[art.medium]]
+					<br>
+					[[art.dimensions]]
+					</figcaption>
+				</figure>
+				<blockquote>
+					[[art.quote]]
+				</blockquote>
+			</div>
+			<div class="landscape-image" v-if="art.type === 'landscape+image'">
+				<figure>
+					<img :src="url(art.imgUrl)">
+					<figcaption>
+					[[art.title]]
+					<br>
+					[[art.artistName]]
+					<br>
+					[[art.medium]]
+					<br>
+					[[art.dimensions]]
+					</figcaption>
+				</figure>
+			</div>
+			<div v-if="art.type === 'quote'">
+				<blockquote>
+					[[art.quote]]
+				</blockquote>
+			</div>
+			<div>
+				<span id="forward-item-gallery" v-if="art.type !== 'special+gallery+item'" v-on:click="chooseArt(index + 1)">></span>
+			</div>
+		</div>
+	</div>
+</div>

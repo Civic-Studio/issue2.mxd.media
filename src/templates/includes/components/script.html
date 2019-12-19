@@ -1,8 +1,6 @@
 <script type="text/javascript">
 
 (function() {
-
-
 	function favicon() {
 		var favIcon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAALQCAYAAABfdxm0AAAUv0lEQVR42u3drXNV5xrG4UcgEBEIBAIRgUBUIBCICmYqKhCICgSiAlFRgUBUVCAQCAQiAoFAIBAVCMQRCERFBeIIRAUCgUAgEBGIiHPWPcl71toM4eM0QPLkumbufyDZ2ZO191rvrwoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPuDotNPTvvejAAAA4KBbn3Z+2s/Tbky7P+3Paa+m/WcxAAAA2NeOTzs77dK036bdmfZ42vNpW+9c5H5op/woAQAA+JbWpn037cK0q9NuT3s47dm0zc+4wP3YfvCjBgAA4Es6UtvfvuYC9Mq0m9MeTPtr2us9vMD92K74VQAAAPBPnZh2btrlab9PuzvtybQXX/EC92O76dcEAADAxxybdmbaxWnXpm1MezTt72lv99FF7of2wK8RAACAkQv6cdov025N+2Pa02lvDsgF7sf2l18zAADA4XCy5lzQ9ZpzQS+bXOB+bK+8BAAAAHoYuaCfas4F/as+PxfUeWteJgAAAPvfMhf0a825oH/X3uaCOu87LyMAAID9YZkLulFzLuiVi9c92QUvMQAAgK/jfbmgx7W/ckGdd9VLEAAAYG8sc0G52Bq5oGd1cHJBnXfbSxQAAODTHKnVXNDNmnNBr11g7vs99BIGAACYJRf0fc25oHt1uHJBnffMyxsAADhMdssF/V1yQd236eUPAAB0crRWc0G3as4FvXEReOh33J8IAABwkKzXai7ofskF2aftrD8fAABgPxm5oEu1mgt67gLO/uEu+fMCAAC+prXaPRe06SLNvuB+8+cHAADspeSCTtVqLuhByQXZt98df54AAMDnGrmgyzXngp6UXJDt7z32pwsAALzrWM25oGu1mgt660LKDuie+9MGAIDDJ7mg07WaC/qj5IKs33LbfU4Jz234N/zpAwBAT+vTztdqLujPkguyXsvBaTlALb3n27V9sFo+2EkPes3bAAAA9HC85lxQTrdd5oK2XBhZk23tvKbz2r6z81rPa/7szt8AAADQQL69yrdYIxeUb7fkgqzjcldC7k7IXQq5W+Hn2r57Yd3bAAAA9DByQT/Uai4ozyvKBVmn5bnyPF+e58zzvHmeO08mK8+hH/VWAAAAPZyoORf0e825oBcuiqzRcjJ4TgjPSeEbtX1yeE4QP1PbJ4oDAAANHNv5J3/kgjZKLsh67uXOhzf3dj7Mubzz4c4JbwMAANDDyAXldk25IOueC3pa27fh53b83Jaf2/Nzm/4RbwUAANDDydo+cCcH7yxzQS9dFFmjjVxQDlIbuaAcsCYXBAAAjSSVkmTKyAUlpSIXZJ1zQXdrzgWdK7kgAABoY+SCLtScC3pYckHWMxeUU8JHLuhKyQUBAEA7IxeUf/jlgqx7Ligf4IxcUD7YkQsCAIBGcpJsbtUcuaDcwikXZJ1zQbkVf+SCcou+XBAAADQxckEXa84FPSq5IOudC7pecy7opLcBAADoYZkLSj5l5IKSVZELso65oLy+Ry4or3u5IAAAaCTfYOWbrOSC8s2WXJB1zwXlToWRC8odDHJBAADQxMgF5ZnEkQvKs4pyQdZty1xQnjkfuaAT3gYAAKCHZS4op8uOXFBOnZULso65oJwWPnJBOUV83dsAAAD0scwF3ag5F/TKRZE12jIXdLvmXFA+4JELAgCAJkYuKLdsjlxQbuWUC7JOyy33y1xQbskfuaDj3gYAAKCHZS4oh++MXFAO5ZELsm65oByiNnJBOVxNLggAABpJJmWZC0pGZeSCXrsoskZb5oJu1ZwLOl1yQQAA0Ma7uaB8wyUXZN2WOxKWuaBrNeeCjnkbAACAHpa5oPzTP3JBeWZRLsg6Lc+WL3NBl0suCAAAWskpsstcUG7fHLmgNy6KrNF2ywWd8jYAAAB9rNdqLuh+yQVZv23Wai7oas25oDVvAwAA0MNuuaDnLoqs0bZ2XtPLXFBe83JBAADQSL69WuaC8u3WyAVtujCyRhu5oNylMHJB50suCAAA2kgmJc8hLnNBeU5RLsi67U3tngs66q0AAAB6GLmgnCw7ckFPSi7I+uWCckL4MheUE8TlggAAoJH8c79bLuitCyNrtBc7H94sc0H5cEcuCAAAmsjtmblNc5kLym2cckHWbbntfuSCcjv+Mhd0xFsBAAD0sF7bB+4sc0E5kEcuyLrlgnKAmlwQAAA0llTKyAUlobLMBW25MLImG7mgvLaXuaBzJRcEAABt5NurfIslF2Tdl7sSRi4odyuMXNC6twEAAOhh5ILyPOIyF5TnFeWCrFsuKM+Xj1xQnjuXCwIAgGZykuzIBeWE2ZELeuGiyBpt5IJyUrhcEAAANHVs55/8kQvaKLkg67mXOx/e3KvVXNBJbwMAANDDyAXldk25IOueC3pacy4ot+XLBQEAQDP5But8bR+8s8wFvXRRZI02ckE5SG3kgnLAmlwQAAA0klTK2ZpzQUmpyAVZx41c0N1azQWd8DYAAAA9jFzQhZpzQQ9LLsh65oJySvjIBV0puSAAAGhn5ILyD79ckHXPBeUDnJELygc7ckEAANBIbtHMrZojF5RbOOWCrNtyy/3IBeVW/JELyi36ckEAANDEyAVdrDkX9KjkgqxnLiiHqCUXdL3kggAAoJ1lLij5lJELSlZFLsg65oLy+h65oLzu5YIAAKCRfIOVb7KSC8o3W3JB1j0XlDsVRi4odzDIBQEAQBMjF5RnEkcuKM8qygVZt+XZ8pELyjPnckEAANDMMheU02VHLiinzsoFWcdcUE4LH7mgnCK+7m0AAAD6WOaCbtScC3rlosgabZkLul1zLigf8MgFAQBAEyMXlFs2Ry4ot3LKBVnnXFBuyR+5oOPeBgAAoIdlLiiH74xcUA7lkQuyjrmgHKaWQ9VyuJpcEAAANJJMyjIXlIzKyAW9dlFkjbbMBd2qORd0uuSCAACgjXdzQfdKLsj6LXckLHNB12rOBR3zNgAAAD0sc0H5p3/kgvLMolyQdc4FXS65IAAAaCWnyC5zQbl9c+SC3rgoskZb5oJyO/7IBZ3yNgAAAH2s12ou6H7JBVm/bdZqLuhqzbmgNW8DAADQw265oOcuiqzRtnZe08tcUF7zckEAANBIvr1a5oLy7dbIBW26MLJGe18u6HzJBQEAQBvJpOQ5xGUuKM8pygVZt72p1VzQrzXngo56KwAAgB5GLigny45c0JOSC7J+uaCcEL7MBeUEcbkgAABoJP/c75YLeuvCyBrtxc6HN8tcUD7ckQsCAIAmcntmbtNc5oJyG6dckHVbbrvfLRd0xFsBAAD0sF7bB+4sc0E5kEcuyLrlgnKA2jIXlAPW5IIAAKCRpFJGLigJlWUuaMuFkTXZyAXltb3MBZ0ruSAAAGgj317lWyy5IOu+3JUwckG5W2Hkgta9DQAAQA8jF5TnEZe5oDyvKBdk3XJBeb5cLggAABrLSbIjF5QTZkcu6IWLImu0kQvKSeHLXFBOEpcLAgCAJvLP/Zmac0EbJRdkPfdy58Obe7WaCzrpbQAAAPqRC7LuuaCnNeeCclu+XBAAABxSLpKsQy4oB6nJBQEAAB/03EWU7fONXFCSWMtc0Al/vgAAwOd47ALLvvGSC8op4SMXdKXkggAAgC/grgsw+8IbuaCHNeeCLpRcEAAA8JX97gLN/uG2as4F3Sm5IAAAYJ+65ALOPmHJBf1Z27mg6yUXBAAAHEDnXNxZzbmg5LBGLujHkgsCAAAaOeHi79DlgjZqzgWdKbkgAADgENl0gdguF5Rnu+WCAAAA3vHMxeOBygU9qDkX9EPJBQEAAHyyRy4u910u6HbNuaDvSi4IAABgT2y4+PwmuaDfas4FHfcyBAAA+PKuujj9Yrmgn0suCAAAYN+46ML1/8oF3ao5F3S65IIAAAD2vTMubP+3t7WaC7pWcy7omJcKAADAwbZ2yC5yX9RqLuhyyQUBAAAcGq+rfy7olF8zAAAATw/QBe5mreaCcojXyAWt+VUCAADwIQ9qf+WCntdqLuhSyQUBAACwB27Wt8kF3a85F3S+5IIAAAD4wn7Z4wvcN7V7LuioHzcAAADfyo/1+bmgv2s1F/RTyQUBAACwz52q9+eCntRqLuj7kgsCAADgADtSq7mgI34kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALzXfwF8Zob0ExvCjQAAAABJRU5ErkJggg==';
 
@@ -14,8 +12,164 @@
 	}
 
 	favicon();
-
-	
 })();
+
+new Vue({
+  el: '#vue-app',
+  data: function() {
+    return {
+    	currentSlide: 0,
+    	sideBarOpen: true,
+    	bottomSheetOpen: false,
+    	artists: {
+    		'/gallery/water-series': {
+    			module: {
+    				title: 'Water Series',
+    				subtitle: 'Abstractions water movements by Anne Nelson',
+    				description: '<p>I have been listening to a lot of krautrock lately. It is pretty good, lots of drums, some yelling even, and the early discoveries of modulation and their effects on acoustic instruments.</p>'
+    			},
+    			gallery: [
+    				{
+    					type: 'portrait+image+quote',
+    					title: 'Title 1',
+    					imgUrl: 'portrait.png',
+    					artistName: 'Anne Nelson',
+    					medium: 'Acrylic paint on paper',
+    					dimensions: '100 x 100',
+    					quote: 'This is a long quote. I hope there are a lot of cool things to say about this quote. Like this quote is the quote of all quotes. You can quote this quote and get a quote of 1 million dollars.'
+    				},
+    				{
+    					type: 'portrait+image+quote',
+    					title: 'Title 2',
+    					imgUrl: 'portrait.png',
+    					artistName: 'Anne Nelson',
+    					medium: 'Acrylic paint on paper',
+    					dimensions: '100 x 100',
+    					quote: 'This is a short quote. Simple quote.'
+    				},
+    				{
+    					type: 'portrait+image+quote',
+    					title: 'Title 3',
+    					imgUrl: 'portrait.png',
+    					artistName: 'Anne Nelson',
+    					medium: 'Acrylic paint on paper',
+    					dimensions: '100 x 100',
+    					quote: 'This is a short quote. Simple quote.'
+    				},
+    				{
+    					type: 'portrait+image+quote',
+    					title: 'Title 4',
+    					imgUrl: 'portrait.png',
+    					artistName: 'Anne Nelson',
+    					medium: 'Acrylic paint on paper',
+    					dimensions: '100 x 100',
+    					quote: 'This is a short quote. Simple quote.'
+    				},
+    				{
+    					type: 'landscape+image',
+    					title: 'Title 5',
+    					imgUrl: 'background.png',
+    					artistName: 'Anne Nelson',
+    					medium: 'Acrylic paint on paper',
+    					dimensions: '100 x 100'
+    				},
+    				{
+    					type: 'quote',
+    					quote: 'Amazing quote - exquisitely executed with the voice box - you really captured the zeitgeist of the people - way to go, Quote!'
+    				}
+    			]
+    		},
+    		'/gallery/behind-the-scenes': {
+    			gallery: [	
+    				{
+    					type: 'landscape+image+text',
+    					imgUrl: 'behind-the-scenes/1a.jpg',
+    					text: 'Mixed Media dinner, left, and Water Leaders Institute workshop, right. Artists join engineers, planners, water experts, and neighborhood leaders in studying historic maps and systems diagrams, seeking to understand the ways in which New Orleans and its water systems have evolved over time. A basic premise of both this project and the Water Leaders Institute is that science and decision-making must be connected to culture and community.',
+    					artistName: 'Photos by Maggie Hermann'
+    				},
+    				{
+    					type: 'landscape+image',
+    					imgUrl: 'behind-the-scenes/1d.jpg'
+    				},
+    				{
+    					type: 'landscape+image+text',
+    					imgUrl: 'behind-the-scenes/2a.jpg',
+    					text: 'Anne looks to historic newspaper prints and experiments with different modes of drawing to explore possibilities for representing the past, present, and future of water management in New Orleans.',
+    					artistName: 'Print from Tuscaloosa Times'
+    					
+    				},
+    				{
+    					type: 'landscape+image+text',
+    					imgUrl: 'behind-the-scenes/2b.jpg',
+    					text: 'Anne looks to historic newspaper prints and experiments with different modes of drawing to explore possibilities for representing the past, present, and future of water management in New Orleans.',
+    					artistName: 'Drawing by Anne Nelson'
+    				},
+    				{
+    					type: 'landscape+image+text',
+    					imgUrl: 'behind-the-scenes/2c.jpg',
+    					text: 'As a result of her Mixed Media explorations and her participation in the 2018 Water Leaders Institute neighborhood leaders cohort, Anne joins neighborhood leader Janet Tobias in presenting what they’ve learned to their neighbors at a St. Roch Neighborhood Association meeting.',
+    					artistName: 'Photo provided by Janet Tobias'
+    					
+    				},
+    				{
+    					type: 'landscape+image+text',
+    					imgUrl: 'behind-the-scenes/3a.jpg',
+    					text: 'In summer 2019, the Mixed Media team visits drainage pump stations around New Orleans with photographers Christine “CFreedom” Brown and Maggie Hermann. General Superintendent Bob Turner (above) and Drainage and Sewerage Superintendent Gerald Tilton connect us to pump station operators at DPS 1, 4, 19, Station D, and also the London Avenue Canal Closure Structure.',
+    					artistName: 'Photo by Maggie Hermann'
+    					
+    				},
+    				{
+    					type: 'landscape+image+text',
+    					imgUrl: 'behind-the-scenes/4a.jpg',
+    					text: 'CFreedom engaging pump station operators and working to capture what it is like to be inside a pump station.',
+    					artistName: 'Photos by Alex Stokes'	
+    				},
+    				{
+    					type: 'landscape+image',
+    					imgUrl: 'behind-the-scenes/4b.jpg'
+    				},
+    				{
+    					type: 'landscape+image',
+    					imgUrl: 'behind-the-scenes/5a.jpg'
+    				},
+    				{
+    					type: 'landscape+image+text',
+    					imgUrl: 'behind-the-scenes/5b.jpg',
+    					text: 'Maggie Hermann during pump station visits. Throughout this period, we keep close track of the weather, hoping to capture different aspects of drainage operations by visiting pump stations during different hours of the day, when it is pouring rain, and also when it is sunny and dry, all the while asking questions and trying to stay out of the way.',
+    					artistName: 'Photos by Aron Chang and CFreedom'	
+    				},
+    			]
+    		}
+    	}
+    }
+  },
+  delimiters: ['[[',']]'],
+  props: ['title', 'subtitle', 'description'],
+  methods: {
+  	sideBarModule: function(type) {
+  		return ;
+  	},
+    galleryArray: function() {
+    	var path = document.location.pathname;
+    	let artists = this.artists;
+		return artists[path].gallery;
+	},
+	galleryArrayLength: function() {
+		var path = document.location.pathname;
+    	let artists = this.artists;
+    	console.log(artists[path].gallery.length)
+		return artists[path].gallery.length;	
+	},
+	showArt: function(index) {
+		return this.currentSlide === index;
+	},
+	chooseArt: function(index) {
+		this.currentSlide = index;
+	},
+	url: function(path) {
+		return 'https://cdn.mxd.media/' + path;
+  	}
+  }
+})
 
 </script>

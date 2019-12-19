@@ -48,7 +48,7 @@ def show_essays(title=None):
 def show_galleries(series=None):
 	return render_template('gallery.html', series=series)
 
-@main.route('/artists')
+@main.route('/people')
 def show_artists():
 	metadata_name = {
 		'keywords': 'New Orleans artists, Mixed Media, CFreedom, Maggie Hermann, Ann Nelson, art and media',
@@ -68,7 +68,7 @@ def show_artists():
 	}
 
 	return render_template(
-		'artists.html',
+		'people.html',
 		metadata_name=metadata_name,
 		metadata_property=metadata_property
 	)

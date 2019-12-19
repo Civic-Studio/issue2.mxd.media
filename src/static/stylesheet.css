@@ -359,18 +359,30 @@ article.blockquote-container {
 #back-item-gallery,
 #forward-item-gallery {
 	position: absolute;
-    top: 40%;
     font-size: 30px;
-    text-shadow: 3px 3px 6px;
     cursor: pointer;
 }
 
 #back-item-gallery {
-	left: 15px;
+	left: 13px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent rgb(70, 130, 180) transparent transparent;
+    border-width: 40px 40px 40px 0;
+    top: 45%;
+    z-index: 999;
 }
 
 #forward-item-gallery {
-	right: 15px;
+	right: 13px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent transparent transparent rgb(70, 130, 180);
+	border-width: 40px 0 40px 40px;
+	top: 45%;
+	z-index: 999;
 }
 
 /* Essays */
@@ -396,7 +408,6 @@ article.blockquote-container {
     color: #aaa;
     font-weight: 200;
     text-transform: uppercase;
-    margin-top: 48px;
     position: relative;
     border-bottom: 1px solid rgba(0,0,1,.1);
 }
@@ -406,6 +417,32 @@ article.blockquote-container {
     content: 'PHOTO ESSAY';
     font-size: 12px;
     top: -15px;
+}
+
+.gallery-wrapper {
+	margin: auto;
+}
+
+.gallery-wrapper h1 {
+	text-align: center;
+    color: #aaa;
+    font-weight: 200;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.gallery-wrapper h1::before {
+    position: absolute;
+    content: 'GALLERY';
+    font-size: 12px;
+    top: -15px;
+}
+
+.gallery-wrapper p {
+	max-width: 620px;
+	text-align: center;
+	font-weight: 200;
+	margin: auto;
 }
 
 .essay-wrapper h2 {
@@ -578,6 +615,7 @@ figcaption.side-by-side {
     width: 100%;
     overflow-y: scroll;
     justify-content: center;
+    position: relative;
 }
 
 /* -- Image Figures & Captions --- */
@@ -664,6 +702,28 @@ figcaption.side-by-side {
 	width: 100%;
 }
 
+/* Landscape Image - Text Overlay */
+
+.art-gallery-item .landscape-image-text img {
+	max-width: 900px;
+	width: 100%;
+}
+
+.art-gallery-item .landscape-image-text figure {
+	position: relative;
+}
+
+.art-gallery-item .landscape-image-text figcaption {
+	position: absolute;
+    font-size: 12px;
+    background-color: rgba(0,0,1,.75);
+    color: white;
+    right: 0;
+    bottom: 5px;
+    padding: 6px;
+    max-width: 50%;
+}
+
 /* ---- */
 /* Quote only*/
 
@@ -686,8 +746,8 @@ figcaption.side-by-side {
 }
 
 .art-gallery-item blockquote {
-	font-size: 26px;
-	font-family: 'Libre Baskerville', serif;
+	font-size: 18px;
+	font-family: serif;
 	font-style: italic;
 	text-align: center;
 }

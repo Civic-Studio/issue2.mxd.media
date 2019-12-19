@@ -33,3 +33,6 @@ build
 *.csr
 *.key
 *.crt
+
+#Notes
+notes.txt
