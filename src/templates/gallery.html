@@ -1,16 +1,29 @@
-{% extends "index.html" %}
-{% block title %}Index{% endblock %}
-{% block head %}
-    {{ super() }}
-    <style type="text/css">
-        .important { color: #336699; }
-    </style>
-{% endblock %}
-{% block content %}
-    <h1>Index</h1>
-    <p class="important">
-      Welcome to my awesome homepage.
-    </p>
-{% endblock %}
+<!doctype html>
+<head>
+  {% block head %}
+      <title>{% block title %}{% endblock %} - Issue #2 | Mixed Media </title>
+      {% include "includes/components/head-tag.html" %}
+  {% endblock %}
+</head>
+<body>
+  {% include 'includes/components/nav.html' %}
+  <div id="app">
+    <div class="gallery-wrapper">
+      {}
+    	{% if series == "behind-the-scenes" %}
+    	  <h2>Hello World</h2>
+    	  {% include 'includes/galleries/behind-the-scenes.html' %}
+
+    	{% elif series == 'anne-nelson' %}
+
+    	  {% include 'includes/galleries/anne-nelson.html' %}
+
+    	{% endif %}
+
+      {% include "includes/components/bottom-sheet.html" with context %}
+    </div>
+  </div>
+  {% include 'includes/components/footer.html' %}
+</body>
 
 {% include "includes/components/script.html" %}

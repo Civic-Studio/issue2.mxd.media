@@ -20,8 +20,11 @@ csp = {
     	'https://fonts.gstatic.com'
     ],
     'script-src': [
+        'https://unpkg.com/vue@2.6.11/dist/vue.js',
+        'https://unpkg.com/vue/dist/vue.js',
         '\'self\'',
-        '\'unsafe-inline\''  
+        '\'unsafe-inline\'',
+        '\'unsafe-eval\''
     ]
 }
 

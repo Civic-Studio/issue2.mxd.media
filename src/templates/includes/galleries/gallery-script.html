@@ -1,0 +1,102 @@
+<script type="text/x-template" id="gallery">
+	<div class="gallery-wrapper">
+		<a href="index.html" class="home-link">Home</a>
+		<div class="art-gallery-item" v-for="(art, index) in galleryArray()" v-show="showArt(index)">
+			
+			<span id="back-item-gallery" v-if="art.type !== 'special+gallery+item'" v-on:click="chooseArt(index - 1)"><</span>
+
+			<div class="special-gallery-item" v-if="art.type === 'special+gallery+item'">
+				<div class="mini-gallery">
+					<figure v-for="(k,v) in art.imgColumn">
+						<img v-for="i in k.img" v-bind:src="url(i)">
+						<caption v-if="k.text">{{k.text}}</caption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="portrait-image-quote" v-if="art.type === 'portrait+image+quote'">
+				<figure>
+					<img v-bind:src="url(art.imgUrl)">
+					<figcaption>
+						{{art.title}}
+						<br>
+						{{art.artistName}}
+						<br>
+						{{art.medium}}
+						<br>
+						{{art.dimensions}}
+					</figcaption>
+				</figure>
+				<blockquote>
+					{{art.quote}}
+				</blockquote>
+			</div>
+
+			<div class="landscape-image" v-if="art.type === 'landscape+image'">
+				<figure>
+					<img :src="url(art.imgUrl)">
+					<figcaption>
+						{{art.title}}
+						<br>
+						{{art.artistName}}
+						<br>
+						{{art.medium}}
+						<br>
+						{{art.dimensions}}
+					</figcaption>
+				</figure>
+			</div>
+
+			<div v-if="art.type === 'quote'">
+				<blockquote>
+					{{art.quote}}
+				</blockquote>
+			</div>
+			
+			<div>
+				<span id="forward-item-gallery" v-if="art.type !== 'special+gallery+item'" v-on:click="chooseArt(index + 1)">></span>
+			</div>
+
+			<div class="art-gallery-nav-container">
+				<div class="art-gallery-nav" v-bind:class="{ 'bottom-sheet-open' : bottomSheetOpen === true }">
+					<div class="bottom-sheet-row-1">
+						<div class="art-gallery-nav-title-container" v-on:click="bottomSheetOpen = !bottomSheetOpen">
+							<h4>{{sideBarModule('title')}}</h4>
+							<h5>{{sideBarModule('subtitle')}}</h5>
+						</div>
+						<div class="art-gallery-nav-item-tracker-container" v-if="art.type !== 'special+gallery+item'">
+							<span v-for="(art, index) in galleryArray()" v-on:click="chooseArt(index)" v-bind:class="{ 'active': showArt(index) }"></span>
+						</div>
+					</div>
+					<div class="bottom-sheet-row-2">
+						<div class="art-gallery-nav-description-container" v-show="bottomSheetOpen" v-html="sideBarModule('description')"></div>
+						<div class="art-gallery-nav-bottom-sheet-options-container" v-show="bottomSheetOpen">
+							<table>
+								<tr>
+									<td>🔗</td>
+									<td>Share Link</td>
+								</tr>
+								<tr>
+									<td>F</td>
+									<td>Facebook</td>
+								</tr>
+								<tr>
+									<td>T</td>
+									<td>Twitter</td>
+								</tr>
+								<tr>
+									<td>E</td>
+									<td>Email the artist</td>
+								</tr>
+								<tr>
+									<td>$</td>
+									<td>Bid on artwork</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

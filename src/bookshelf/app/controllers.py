@@ -1,18 +1,22 @@
 from flask import Blueprint, render_template, request
 import os, json
 
+env = os.environ['FLASK_ENV'] or 'development'
 site_name = 'Issue 2 from Mixed Media: Water Systems'
 fb_admin = '12345678'
+
+current_path = os.getcwd()
+if env == "development":
+	home_page_essays = json.load(open(current_path + '/src/json/essays.json'))
+	home_page_galleries = json.load(open(current_path + '/src/json/galleries.json'))
+else:
+	home_page_essays = json.load(open(current_path + '/json/essays.json'))
+	home_page_galleries = json.load(open(current_path + '/json/galleries.json'))
 
 main = Blueprint('main', __name__, template_folder='../../templates', static_folder='../../static')
 
 @main.route('/')
 def show_index():
-	current_path = os.getcwd()
-	print(current_path)
-	home_page_essays = json.load(open(current_path + '/json/essays.json'))
-	home_page_galleries = json.load(open(current_path + '/json/galleries.json'))
-
 	metadata_name = {
 		'keywords': 'New Orleans artists, Mixed Media, SWBNO, Sewerage Water Board New Orleans, art, water systems',
 		'description': 'This feature is a part of MIXED MEDIA, a multidisciplinary initiative by the Blue House / Civic Studio that supports civic dialog on critical issues through art, research, and storytelling.',
@@ -42,7 +46,7 @@ def show_essays(title=None):
 
 @main.route('/gallery/<series>')
 def show_galleries(series=None):
-	return render_template('galleries.html', series=series)
+	return render_template('gallery.html', series=series)
 
 @main.route('/artists')
 def show_artists():

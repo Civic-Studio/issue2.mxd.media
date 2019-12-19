@@ -5,14 +5,14 @@
         "title": "Behind the Scenes",
         "description": "Learn about our process",
         "background_image": "https://cdn.mxd.media/pump-operators-individual/1a.jpg",
-        "link": "/galleries/behind-the-scenes",
+        "link": "/gallery/behind-the-scenes",
         "flex_val": 2
       },
       {
         "title": "Water Series",
         "description": "Artist Anne Nelson's exploration of water interaction",
         "background_image": "https://cdn.mxd.media/water-creature/1.jpg",
-        "link": "/galleries/water-series",
+        "link": "/gallery/water-series",
         "flex_val": 2
       }
     ]
