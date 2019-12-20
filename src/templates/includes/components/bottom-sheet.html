@@ -3,63 +3,49 @@
 		<div class="art-gallery-nav" v-bind:class="{ 'bottom-sheet-open' : bottomSheetOpen === true }">
 			<div class="bottom-sheet-row-1">
 				<div class="art-gallery-nav-title-container" v-on:click="bottomSheetOpen = !bottomSheetOpen">
-					<h4>{{title}}</h4>
+					<h4>Key Terms and Acronyms</h4>
 				</div>
 			</div>
 			<div class="bottom-sheet-row-2">
-				<div class="art-gallery-nav-description-container" v-show="bottomSheetOpen">
+				<div class="art-gallery-nav-description-container" v-show="!bottomSheetOpen">
+					<h2>
+						Sewerage & Water Board New Orleans, SWBNO
+					</h2>
 					<p>
-						Who are the people that run the city’s drainage pump stations, twenty four hours a day? We spoke with operators at four different stations, and got to know them as individuals. As proud parents and trumpet players, power lifters and auto mechanics, and as philosophers and Uber drivers -- they are each striving to make a living and to provide for their families. As Utility Plant Worker Rob Barrow put it, working at the Sewerage and Water Board is also “a chance to help the city.”
+						The public agency that operates drainage, drinking water, and sewerage systems for New Orleans. The Department of Public Works is responsible for catch basins and small pipes. The Sewerage & Water Board is responsible for large pipes, culverts (underground canals), canals, and drainage pump stations. The drainage system includes 24 drainage pump stations, 120 drainage and constant-duty pumps, and an annual budget of over $50 million. Learn more about the SWBNO here. 
 					</p>
+					<h2>
+						Pumping Plant Operator, PPO, Pump Station Operator
+					</h2>
 					<p>
-						A few common threads emerged.
+						The person in charge of each individual pump station is a Sewerage & Water Board employee known as a “pumping plant operator.” For this body of work, we refer to PPOs with the more accessible “pump station operators.” (In our project overview and a few other instances, we refer to everyone we spoke with -- including supervisors, relief operators, PPOs, and UPWs --  collectively as pump station operators.) 
 					</p>
+					<h2>
+						Utility Plant Worker, UPW, Helper
+					</h2>
 					<p>
-						The first is that the SWBNO provides good job opportunities in a city where so many residents otherwise only have access to low-paying service and tourism jobs. Relief Operator Larry Boudreaux shares: “If you’re a convicted felon and you have a high school diploma, you can still get a job [...] and you can make 40K, 60K, 80K, 100K. Where else can you do that?”
-					</p>
+						A utility plant worker assists the PPO (see above) with all aspects of running a pump station. UPWs are sometimes referred to as “helpers.” By taking part in a seven-phase training program, each UPW has the opportunity to become a pump station operator.   
+					</p>	
+					<h2>
+						Drainage Pump Station (DPS #) 
+					</h2>
 					<p>
-						The second is that the operators see themselves as emergency personnel, their work vital to the safety of their fellow New Orleanians. Of the many sacrifices that operators make, the most significant is that each is asked to leave their families to report to work when tropical storms bear down on the region. As Utility Plant Worker Louis Johnston shares, “Family have to be responsible over there, when I have to be here.”
+						When it rains, water flows into storm drains, and from there into the city’s network of pipes and canals, which brings water into the suction basins of the city’s pump stations. Inside the stations, operators turn on one or more pumps to lift the water from a lower elevation to a higher elevation. This sends water flowing towards the next pump station and, or directly into Lake Pontchartrain, the Industrial Canal, Bayou Bienvenue, or the Gulf Intracoastal Waterway Each pump station is identified by number, e.g., DPS 1 or DPS 6 or DPS 19.
 					</p>
-				</div>
-				<div class="art-gallery-nav-bottom-sheet-options-container" v-show="bottomSheetOpen">
-					<table>
-						<tr>
-							<td>🔗</td>
-							<td>Share Link</td>
-						</tr>
-						<tr>
-							<td>F</td>
-							<td>Facebook</td>
-						</tr>
-						<tr>
-							<td>T</td>
-							<td>Twitter</td>
-						</tr>
-						<tr>
-							<td>E</td>
-							<td>Email the artist</td>
-						</tr>
-						<tr>
-							<td>$</td>
-							<td>Bid on artwork</td>
-						</tr>
-					</table>
+					<h2>
+						Central Control, Central
+					</h2>
+					<p>
+						A number of key functions for the drainage network are located at the SWBNO’s Carrollton Plant, alongside the drinking water purification plant that supplies the entire East Bank with drinking water. These functions include turbines that generate power for pump stations, frequency changers that convert between different sources of power, and supervisory and coordination functions. Each pump station communicates with “Central” on a daily basis, and continuously during each storm.       
+					</p>
+					<h2>
+						Suction, Vacuum, and Discharge
+					</h2>
+					<p>
+						The city’s drainage pumps require operators to create a vacuum between the suction and discharge sides of the pump station. That is, by removing air from the pump, atmospheric pressure pushes water from both sides up into the pump, and a spinning impeller pushes that water towards the discharge side of the station. Read more about the Wood screw pump here and here. 
+					</p>    
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript">
-	if (typeof Vue === 'undefined') {
-		var sheetEl = document.getElementById('bottom-sheet');
-		sheetEl.remove();
-	} else {
-		new Vue({
-			el: '#bottom-sheet',
-			data: {
-				bottomSheetOpen: false
-			}
-		});
-	}
-</script>
