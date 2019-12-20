@@ -42,6 +42,34 @@ body {
     width: 100%;
 }
 
+.home-final-wrapper {
+	padding: 0 12px;
+}
+
+.home-final-wrapper div article {
+	display: flex;
+	flex-flow: row;
+}
+
+.home-final-wrapper div article p:nth-child(1),
+.home-final-wrapper div article p:nth-child(2) {
+	padding-right: 12px;
+}
+
+div.home-final-wrapper > div > article a:first-child img {
+	height: 60px;
+    padding: 24px;
+}
+
+div.home-final-wrapper > div > article a:last-child img {
+	height: 40px;
+    padding: 24px;
+}
+
+.home-final-wrapper .social-links {
+	display: flex;
+}
+
 .intro-tiles h1,
 .base-wrapper h1 {
 	margin: 12px;
@@ -147,11 +175,51 @@ article.blockquote-container {
 	display: flex;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 980px) {
 	.base-wrapper .intro-tiles article.events-article {
 		display: flex;
 		flex-flow: column;
 	}
+}
+
+.events-article {
+	position: relative;
+}
+
+#events-1,
+#events-2,
+#events-3 {
+	position: relative;
+}
+
+#events-1:before {
+	content: 'Coffee and Conversation Series';
+	position: absolute;
+	font-family: 'Open Sans';
+	left: 30px;
+	text-decoration: underline;
+	font-weight: 200;
+	top: -5px;
+}
+
+#events-2:before {
+	content: 'Exhibition Openings and Dialogue';
+    position: absolute;
+    font-family: 'Open Sans';
+    left: 30px;
+    text-decoration: underline;
+    font-weight: 200;
+    top: -5px;
+}
+
+#events-3:before {
+	content: 'Creative Workshops';
+	position: absolute;
+	font-family: 'Open Sans';
+	left: 30px;
+	text-decoration: underline;
+	font-weight: 200;
+	top: -5px;
 }
 
 .series-titles {
@@ -423,12 +491,12 @@ article.blockquote-container {
 	font-weight: 200;
 }
 
-.base-wrapper hr, .essay-wrapper hr {
-	width: 20%;
+#app hr, .base-wrapper hr, .essay-wrapper hr {
+	width: 10%;
     margin: 65px auto;
     transform: rotate(-4.2deg);
     background-color: rgba(0,0,1,0.5);
-    height: 5px;
+    height: 2px;
     border: none;
 }
 
@@ -801,9 +869,13 @@ nav {
     background-color: white;
 }
 
-nav img {
-	height: 45px;
+nav svg {
+	height: 100px;
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
+
 
 nav.desktop .menu-container {
 	display: flex;
@@ -817,7 +889,8 @@ nav.mobile .menu-container {
     justify-content: space-between;
 }
 
-nav a {
+
+nav .menu-container a {
 	text-decoration: none;
 	color: #000;
 	font-weight: 200;

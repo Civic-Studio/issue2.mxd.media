@@ -13,11 +13,13 @@ csp = {
     'style-src': [
     	'\'self\'',
     	'https://fonts.googleapis.com',
+        'https://*.typekit.net',
     	'\'unsafe-inline\''
     ],
     'font-src': [
     	'\'self\'',
-    	'https://fonts.gstatic.com'
+    	'https://fonts.gstatic.com',
+        'https://*.typekit.net'
     ],
     'script-src': [
         'https://cdn.jsdelivr.net/npm/vue',
