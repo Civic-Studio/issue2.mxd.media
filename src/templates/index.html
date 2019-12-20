@@ -9,7 +9,7 @@
   {% include "includes/components/nav.html" %}
   <div id="app">
     <div class="home-wrapper">
-      {% for rows in home_page_essays %}
+      {% for rows in home_page_content %}
         <div class="home-row">
           <div class="row">
             {% for item in rows.row %}
@@ -25,27 +25,6 @@
           </div>
         </div>
       {% endfor %}
-    </div>
-    <div class="home-wrapper">
-      {% for rows in home_page_galleries %}
-        <div class="home-row">
-          <div class="row">
-            {% for item in rows.row %}
-              <a 
-                href="{{ item.link }}" 
-                class="series-titles" 
-                style="background-image:url({{item.background_image}});flex:{{item.flex_val}}"
-              >
-                <h1>{{item.title}}</h1>
-                <p>{{item.description}}</p>
-              </a>
-              {% endfor %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="intro-tiles exhibit-wrapper">
-      {% include "includes/components/exhibit.html" %}
     </div>
   </div>
   {% include "includes/components/simple-footer.html" %}

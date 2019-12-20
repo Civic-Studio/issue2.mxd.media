@@ -2,6 +2,24 @@
   {
     "row": [
       {
+        "title": "Water Series",
+        "description": "Artist Anne Nelson's exploration of water interaction",
+        "background_image": "https://cdn.mxd.media/water-series/1.jpg",
+        "link": "/gallery/water-series",
+        "flex_val": 2
+      },
+      {
+        "title": "What Does a Pump Station Do?",
+        "description": "Water falls from sky into storm drains...",
+        "background_image": "https://cdn.mxd.media/what-does-pump-do/5c.jpg",
+        "link": "/essay/what-does-a-pump-station-do",
+        "flex_val": 2
+      }
+    ]
+  },
+  {
+    "row": [
+      {
         "title": "Pump Station Operators",
         "description": "Individuals",
         "background_image": "https://cdn.mxd.media/pump-operators-individual/1a.jpg",
@@ -20,29 +38,18 @@
   {
     "row": [
       {
-        "title": "What Does a Pump Station Do?",
-        "description": "Water falls from sky into storm drains...",
-        "background_image": "https://cdn.mxd.media/what-does-pump-do/5c.jpg",
-        "link": "/essay/what-does-a-pump-station-do",
-        "flex_val": 3
-      },
-      {
         "title": "Keeping the Pumps Running",
         "description": "Can't stop won't stop!",
         "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
         "link": "/essay/keeping-the-pumps-running",
-        "flex_val": 1
-      }
-    ]
-  },
-  {
-    "row": [
+        "flex_val": 2
+      },
       {
         "title": "Day After a Storm",
         "description": "Our team visited right after a storm",
         "background_image": "https://cdn.mxd.media/day-after-storm/2a.jpg",
         "link": "/essay/day-after-a-storm",
-        "flex_val": 3
+        "flex_val": 2
       },
       {
         "title": "Evening at Station D",
@@ -56,12 +63,23 @@
   {
     "row": [
       {
+        "title": "Keeping the Pumps Running",
+        "description": "Can't stop won't stop!",
+        "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
+        "link": "/essay/keeping-the-pumps-running",
+        "flex_val": 2
+      },
+      {
         "title": "Challenges",
         "description": "Life of the pumps can be hard",
         "background_image": "https://cdn.mxd.media/challenges/1b.jpg",
         "link": "/essay/challenges",
         "flex_val": 2
-      },
+      }
+    ]
+  },
+  {
+    "row": [
       {
         "title": "Water Creature",
         "description": "New creatures in Bayou St. John",

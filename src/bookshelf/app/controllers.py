@@ -7,11 +7,9 @@ fb_admin = '12345678'
 
 current_path = os.getcwd()
 if env == "development":
-	home_page_essays = json.load(open(current_path + '/src/json/essays.json'))
-	home_page_galleries = json.load(open(current_path + '/src/json/galleries.json'))
+	home_page_content = json.load(open(current_path + '/src/json/content.json'))
 else:
-	home_page_essays = json.load(open(current_path + '/json/essays.json'))
-	home_page_galleries = json.load(open(current_path + '/json/galleries.json'))
+	home_page_content = json.load(open(current_path + '/json/content.json'))
 
 main = Blueprint('main', __name__, template_folder='../../templates', static_folder='../../static')
 
@@ -36,8 +34,7 @@ def show_index():
 
 	return render_template(
 		'index.html',
-		home_page_essays=home_page_essays,
-		home_page_galleries=home_page_galleries
+		home_page_content=home_page_content
 	)
 
 @main.route('/essay/<title>')
@@ -97,7 +94,3 @@ def show_projects():
 		metadata_name=metadata_name,
 		metadata_property=metadata_property
 	)
-
-@main.route('/purchase')
-def show_purchase():
-	return render_template('purchase.html')
