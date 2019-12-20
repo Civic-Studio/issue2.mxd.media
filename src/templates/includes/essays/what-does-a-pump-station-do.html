@@ -1,6 +1,14 @@
-<h1>{{title}}</h1>
-<article class="text-content">
-  <h2>Photos by CFreedom and Maggie Hermann</h2>
+{% extends 'essay_base.html' %}
+
+{% block essay_title %}
+  What Does a Pump Station Do?
+{% endblock %}
+
+{% block essay_authorship %}
+  Photos by CFreedom and Maggie Herman
+{% endblock %}
+
+{% block essay_content %}
   <p>
     There are 24 drainage pump stations located across New Orleans, housing a total of 120 pumps. When water falls from the sky, some of it is caught by plants, and some of it is absorbed into the ground. Everything else runs off and flows into storm drains, and from there into the city’s network of pipes and canals. This network draws water by gravity into the suction basins of drainage pump stations. Inside the stations, operators turn on one or more pumps to lift the water from a lower elevation to a higher elevation. This sends water flowing towards the next pump station, or directly into Lake Pontchartrain, the Industrial Canal, Bayou Bienvenue, or the Gulf Intracoastal Waterway. 
   </p>
@@ -13,6 +21,10 @@
     This set of images follows that flow of water into DPS 1 and DPS 4, and beyond, during both wet and dry weather. Even when it is not raining, operators periodically turn on “constant duty” pumps to lower groundwater levels. Unfortunately, these cycles of pumping during both wet and dry weather contribute directly to subsidence, which is the sinking of the ground and the primary reason why nearly 50% of the city’s land area is below sea level.
 
   </p>
+{% endblock %}
+
+{% block essay_content %}
+<article class="text-content">
 </article>
 <article>
   <figure>
@@ -124,3 +136,4 @@
     </figcaption>
   </figure>
 </article>
+{% endblock %}

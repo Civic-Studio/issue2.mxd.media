@@ -1,0 +1,13 @@
+<div class="essay-headline">
+  <h1>{% block essay_title %}{% endblock %}</h1>
+  <p><i>{% block essay_authorship %}{% endblock %}</i></p>
+</div>
+
+<article class="essay-intro text-content">
+	{% block essay_intro %}{% endblock %}
+	<hr>
+</article>
+
+{% block essay_content %}{% endblock %}
+
+<hr>

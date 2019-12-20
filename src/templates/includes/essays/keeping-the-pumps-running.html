@@ -1,6 +1,14 @@
-<h1>{{title}}</h1>
-<article class="text-content">
-  <h2>Photos by CFreedom and Maggie Hermann</h2>
+{% extends 'essay_base.html' %}
+
+{% block essay_title %}
+  Keeping the Pumps Running
+{% endblock %}
+
+{% block essay_authorship %}
+  Photos by CFreedom and Maggie Herman
+{% endblock %}
+
+{% block essay_intro %}
   <p>
     Many of the pumps in the city’s drainage system have been in use since the early 1900’s. State-of-the-art a century ago, the city’s oldest pumps run on a different power frequency than what the rest of the city now runs on (25 Hz vs. 60 Hz) and contain parts that are no longer commercially available and must be machined in-house by SWBNO employees.   
 
@@ -11,7 +19,9 @@
   </p><p>
     Pump station operators are constantly checking oil levels and temperatures using digital monitoring gauges, as well as their ears, noses, and hands, to keep track of what is and isn’t working. They do this, too, for the vacuum pumps, motor generators, pressure boosters, and other machinery in the pump stations.
   </p>
-</article>
+{% endblock %}
+
+{% block essay_content %}
 <article>
   <figure>
     <img src="https://cdn.mxd.media/what-does-pump-do/4c.jpg"/>
@@ -75,3 +85,4 @@
     </figcaption>
   </figure>
 </article>
+{% endblock %}

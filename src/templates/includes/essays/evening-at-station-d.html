@@ -1,10 +1,20 @@
-<h1>{{title}}</h1>
-<h2>Photos by CFreedom</h2>
-<article class="text-content">
+{% extends 'essay_base.html' %}
+
+{% block essay_title %}
+  Evening at Station D
+{% endblock %}
+
+{% block essay_authorship %}
+  Photos by CFreedom and Maggie Herman
+{% endblock %}
+
+{% block essay_intro %}
   <p>
     As the rest of New Orleans winds down for the day, Relief Operator Larry Boudreaux and UPW Rob Barrow are just halfway through their 3 to 11 p.m. watch at Station D. Station D is different from the other drainage pump stations. In addition to drainage pumps, the station also houses large machines called frequency changers, which allow SWBNO to convert between 60 Hz power provided by Entergy and 25 Hz power produced by SWBNO turbines. Both energy sources are vital for pump station operations across the city. Station D is also where the drainage system’s supervisory team is based, and where pump station operator training takes place.
   </p>
-</article>
+{% endblock %}
+
+{% block essay_content %}
 <article>
   <figure>
     <img class="vh40" src="https://cdn.mxd.media/pump-operators-individual/1a.jpg"/>
@@ -74,3 +84,4 @@
     <span>- Robert Barrow</span>
   </blockquote>
 </article>
+{% endblock }

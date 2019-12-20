@@ -1,8 +1,20 @@
-<h1>{{title}}</h1>
-<h2>Photos by CFreedom</h2>
-<p>
-  We visit DPS 1 mid-morning one day in late August. The station is busier than usual. A big afternoon rainstorm had caused street flooding in different parts of the city the previous day. In addition to the Pump Station Operator Renaldo Green and UPW D’juan Boudreaux, there is a team of electricians tackling routine maintenance on one of the station’s motor generators, and a team of supervisors working with Renaldo and D’juan to do a post-operational analysis of issues that had arisen the day before.
-</p>
+{% extends 'essay_base.html' %}
+
+{% block essay_title %}
+  Evening at Station D
+{% endblock %}
+
+{% block essay_authorship %}
+  Photos by CFreedom and Maggie Herman
+{% endblock %}
+
+{% block essay_intro %}
+  <p>
+    We visit DPS 1 mid-morning one day in late August. The station is busier than usual. A big afternoon rainstorm had caused street flooding in different parts of the city the previous day. In addition to the Pump Station Operator Renaldo Green and UPW D’juan Boudreaux, there is a team of electricians tackling routine maintenance on one of the station’s motor generators, and a team of supervisors working with Renaldo and D’juan to do a post-operational analysis of issues that had arisen the day before.
+  </p>
+{% endblock %}
+
+{% block essay_content %}
 <article>
   <figure>
     <img src="https://cdn.mxd.media/day-after-storm/1b.jpg"/>
@@ -62,3 +74,4 @@
     </figcaption>
   </figure>
 </article>
+{% endblock %}

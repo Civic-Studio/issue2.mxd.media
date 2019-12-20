@@ -1,5 +1,14 @@
-<h1>{{title}}</h1>
-<article class="text-content">
+{% extends 'essay_base.html' %}
+
+{% block essay_title %}
+  Water Creatures
+{% endblock %}
+
+{% block essay_authorship %}
+  Photos by CFreedom and Maggie Herman
+{% endblock %}
+
+{% block essay_intro %}
   <p>
     On Sunday, August 4, 2019, we launched a thirty-foot water creature on Bayou St. John. Over the course of the preceding week, artist Carole Alden led the design and creation of this sculpture, working primarily with salvaged materials provided by the Green Project.
   </p>
@@ -15,7 +24,9 @@
   <p>
     Learn more about Carole and her artwork here.
   </p>
-</article>
+{% endblock %}
+
+{% block essay_content %}
 <article>
   <figure>
     <img class="vh50" src="https://cdn.mxd.media/water-creature/1a.jpg"/>
@@ -59,3 +70,4 @@
     </figcaption>
   </figure>
 </article>
+{% endblock %}

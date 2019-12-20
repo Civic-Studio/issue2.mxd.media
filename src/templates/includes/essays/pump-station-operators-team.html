@@ -1,6 +1,14 @@
-<h1>{{title}}</h1>
-<article class="text-content">
-  <h2>Photos by CFreedom and Maggie Hermann</h2>  
+{% extends 'essay_base.html' %}
+
+{% block essay_title %}
+  Evening at Station D
+{% endblock %}
+
+{% block essay_authorship %}
+  Photos by CFreedom and Maggie Herman
+{% endblock %}
+
+{% block essay_intro %}
   <p>
     What kind of teamwork is critical to successful drainage operations? 
   </p>
@@ -16,7 +24,9 @@
   <p>
     Operators do everything from running pumps to cutting grass, but the complexity of the systems require additional inputs. Many situations and repairs require specialists and subcontractors to pay a visit. This might be a machinist coming in to replace an eighty year old part, an electrician performing a test on a balky generator, or a waste disposal service hauling away trash pulled out of the water from a recent storm.
   </p>
-</article>
+{% endblock %}
+
+{% block essay_content %}
 <article>
   <figure>
     <img class="vh40" src="https://cdn.mxd.media/pump-operators-team/4a.jpg"/>
@@ -93,3 +103,4 @@
     </figcaption>
   </figure>
 </article>
+{% endblock %}
