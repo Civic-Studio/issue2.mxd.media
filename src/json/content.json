@@ -3,14 +3,14 @@
     "row": [
       {
         "title": "Water Series",
-        "description": "Artist Anne Nelson's exploration of water interaction",
+        "description": "Paintings by Anne Nelson",
         "background_image": "https://cdn.mxd.media/water-series/1.jpg",
         "link": "/gallery/water-series",
         "flex_val": 2
       },
       {
         "title": "What Does a Pump Station Do?",
-        "description": "Water falls from sky into storm drains...",
+        "description": "Photos by CFreedom and Maggie Hermann",
         "background_image": "https://cdn.mxd.media/what-does-pump-do/5c.jpg",
         "link": "/essay/what-does-a-pump-station-do",
         "flex_val": 2
@@ -21,14 +21,14 @@
     "row": [
       {
         "title": "Pump Station Operators",
-        "description": "Individuals",
+        "description": "Photos by CFreedom and Maggie Hermann",
         "background_image": "https://cdn.mxd.media/pump-operators-individual/1a.jpg",
         "link": "/essay/pump-station-operators-individual",
         "flex_val": 2
       },
       {
-        "title": "Pump Station Operators",
-        "description": "Teamwork & Coordination",
+        "title": "Communications and Teamwork",
+        "description": "Photos by CFreedom and Maggie Hermann",
         "background_image": "https://cdn.mxd.media/pump-operators-team/1a.jpg",
         "link": "/essay/pump-station-operators-team",
         "flex_val": 2
@@ -38,22 +38,22 @@
   {
     "row": [
       {
-        "title": "Keeping the Pumps Running",
-        "description": "Can't stop won't stop!",
+        "title": "Morning at DPS 19",
+        "description": "Photos by Maggie Hermann",
         "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
         "link": "/essay/keeping-the-pumps-running",
         "flex_val": 2
       },
       {
         "title": "Day After a Storm",
-        "description": "Our team visited right after a storm",
+        "description": "Photos by CFreedom",
         "background_image": "https://cdn.mxd.media/day-after-storm/2a.jpg",
         "link": "/essay/day-after-a-storm",
         "flex_val": 2
       },
       {
         "title": "Evening at Station D",
-        "description": "The complexity of machinery",
+        "description": "Photos by CFreedom",
         "background_image": "https://cdn.mxd.media/day-after-storm/2c.jpg",
         "link": "/essay/evening-at-station-d",
         "flex_val": 2
@@ -64,14 +64,14 @@
     "row": [
       {
         "title": "Keeping the Pumps Running",
-        "description": "Can't stop won't stop!",
+        "description": "Photos by CFreedom and Maggie Hermann",
         "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
         "link": "/essay/keeping-the-pumps-running",
         "flex_val": 2
       },
       {
         "title": "Challenges",
-        "description": "Life of the pumps can be hard",
+        "description": "Photos by CFreedom and Maggie Hermann",
         "background_image": "https://cdn.mxd.media/challenges/1b.jpg",
         "link": "/essay/challenges",
         "flex_val": 2
@@ -82,7 +82,7 @@
     "row": [
       {
         "title": "Water Creature",
-        "description": "New creatures in Bayou St. John",
+        "description": "Floating Sculpture by Carole Alden",
         "background_image": "https://cdn.mxd.media/water-creature/1a.jpg",
         "link": "/essay/water-creatures",
         "flex_val": 4
