@@ -980,19 +980,30 @@ footer div {
 
 .art-gallery-nav {
 	max-width: 980px;
-    width: 100%;
-    background-color: rgba(0,0,0,.9);
-    display: flex;
-    z-index: 100;
-    flex-flow: column;
-    box-shadow: -2px -1px 10px grey;
-    border-top: 1px solid rgba(0,0,0,.9);
-    border-left: 1px solid rgba(0,0,0,.9);
-    border-right: 1px solid rgba(0,0,0,.9);
+	width: 100%;
+	background-color: rgba(0,0,0,1);
+	display: flex;
+	z-index: 100;
+	flex-flow: column;
+	border-top: 1px solid rgba(0,0,0,.9);
+	border-left: 1px solid rgba(0,0,0,.9);
+	border-right: 1px solid rgba(0,0,0,.9);
 }
 
 .art-gallery-nav:hover {
 	background-color: rgba(0,0,0,1);
+}
+
+.art-gallery-nav-title-container::after {
+    content: '?';
+    position: absolute;
+    right: 6px;
+    background-color: white;
+    border-radius: 50%;
+    width: 22px;
+    text-align: center;
+    bottom: 6px;
+    font-weight: 800;
 }
 
 .bottom-sheet-row-1 {
@@ -1000,6 +1011,11 @@ footer div {
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row;
+	position: relative;
+}
+
+.bottom-sheet-row-1:hover {
+	cursor: pointer;
 }
 
 .art-gallery-nav-title-container {
@@ -1034,6 +1050,11 @@ footer div {
 .art-gallery-nav-description-container {
 	padding: 16px;
 	font-size: 12px;
+}
+
+.art-gallery-nav-description-container h2,
+.art-gallery-nav-description-container p {
+	padding: 0px;
 }
 
 .art-gallery-nav span.active {

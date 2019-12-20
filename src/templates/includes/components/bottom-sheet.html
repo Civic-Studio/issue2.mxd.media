@@ -1,8 +1,8 @@
 <div id="bottom-sheet">
 	<div class="art-gallery-nav-container">
-		<div class="art-gallery-nav" v-bind:class="{ 'bottom-sheet-open' : bottomSheetOpen === false }">
-			<div class="bottom-sheet-row-1">
-				<div class="art-gallery-nav-title-container" v-on:click="bottomSheetOpen = !bottomSheetOpen">
+		<div class="art-gallery-nav" v-bind:class="{ 'bottom-sheet-open' : bottomSheetOpen !== true }">
+			<div class="bottom-sheet-row-1" v-on:click="bottomSheetOpen = !bottomSheetOpen">
+				<div class="art-gallery-nav-title-container">
 					<h4>Key Terms and Acronyms</h4>
 				</div>
 			</div>
