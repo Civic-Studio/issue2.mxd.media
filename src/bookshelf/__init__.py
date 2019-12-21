@@ -14,7 +14,8 @@ csp = {
     ],
     'img-src': [
         '*.mxd.media',
-        'data:'
+        'data:',
+        'https://www.google-analytics.com'
     ],
     'style-src': [
     	'\'self\'',
@@ -26,9 +27,12 @@ csp = {
     	'https://fonts.gstatic.com',
     ],
     'script-src': [
-        'https://*.mxd.media',
         '\'self\'',
-        '\'unsafe-eval\''
+        '\'unsafe-eval\'',
+        '\'unsafe-inline\'',
+        'https://*.mxd.media',
+        'https://www.googletagmanager.com',
+        'https://www.google-analytics.com'
     ]
 }
 
