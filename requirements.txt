@@ -1,5 +1,6 @@
 Click==7.0
 Flask==1.1.1
+Flask-Compress==1.4.0
 flask-talisman==0.7.0
 gunicorn==19.10.0
 itsdangerous==1.1.0

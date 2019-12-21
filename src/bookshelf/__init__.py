@@ -2,6 +2,9 @@
 from flask import Flask, url_for, request
 from bookshelf.app.controllers import main
 
+# Compress
+from flask_compress import Compress
+
 # CSP and Enforce HTTPS
 from flask_talisman import Talisman
 csp = {
@@ -37,3 +40,4 @@ app.config['CDN_URL'] = 'https://cdn.mxd.media/'
 app.config['CDN_HASH'] = '-12192019'
 
 Talisman(app, content_security_policy=csp)
+Compress(app)
