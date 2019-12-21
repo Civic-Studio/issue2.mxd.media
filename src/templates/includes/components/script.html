@@ -12,163 +12,165 @@
 	}
 
 	favicon();
-})();
 
-new Vue({
-  el: '#vue-app',
-  data: function() {
-    return {
-    	currentSlide: 0,
-    	sideBarOpen: true,
-    	bottomSheetOpen: false,
-    	artists: {
-    		'/gallery/water-series': {
-    			module: {
-    				title: 'Water Series',
-    				subtitle: 'Abstractions water movements by Anne Nelson',
-    				description: '<p>For this second issue of Mixed Media, artist Anne Nelson created works that explore ways in which the water that falls from the sky interacts with soils, plants, people, pipes, and pumps.</p><p>Through participating in Mixed Media and a Water Leaders Institute cohort, Anne joined New Orleans\' neighborhood leaders to engage with technical experts in a dialogue around water management, resilience, and community-based planning.</p><p>The images and words in this series are by Anne.</p>'
-    			},
-    			gallery: [
-                    {
-                        type: 'paragraph',
-                        text: '<p>For this second issue of Mixed Media, artist Anne Nelson created works that explore ways in which the water that falls from the sky interacts with soils, plants, people, pipes, and pumps.</p><p>Through participating in Mixed Media and a <a href="https://www.waterleadersinstitute.com/">Water Leaders Institute</a> cohort, Anne joined New Orleans\' neighborhood leaders to engage with technical experts in a dialogue around water management, resilience, and community-based planning.</p><p>The images and words in this series are by Anne.</p>'
+
+    new Vue({
+      el: '#vue-app',
+      data: function() {
+        return {
+            currentSlide: 0,
+            sideBarOpen: true,
+            bottomSheetOpen: false,
+            artists: {
+                '/gallery/water-series': {
+                    module: {
+                        title: 'Water Series',
+                        subtitle: 'Abstractions water movements by Anne Nelson',
+                        description: '<p>For this second issue of Mixed Media, artist Anne Nelson created works that explore ways in which the water that falls from the sky interacts with soils, plants, people, pipes, and pumps.</p><p>Through participating in Mixed Media and a Water Leaders Institute cohort, Anne joined New Orleans\' neighborhood leaders to engage with technical experts in a dialogue around water management, resilience, and community-based planning.</p><p>The images and words in this series are by Anne.</p>'
                     },
-    				{
-    					type: 'portrait+image+quote',
-    					imgUrl: 'water-series/1-12192019.jpg',
-    					medium: 'Marsh (Phase 1), 22" x 30" Mixed media on paper. 2018.',
-    					quote: 'Abstraction is my primary way of working, because it presents a new, previously unseen field to the viewer. Abstraction can stop us short and make us see something actually fresh.'
-    				},
-    				{
-    					type: 'portrait+image+quote',
-    					imgUrl: 'water-series/2-12192019.jpg',
-    					medium: 'Swamp Sponge (Phase 2), 22" x 30" Mixed media on paper. 2018.',
-    					quote: 'When New Orleans was founded, it was a colony set on firmer, higher ground nearest to the river. The city was surrounded by swamp.'
-    				},
-    				{
-    					type: 'portrait+image+quote',
-    					imgUrl: 'water-series/3-12192019.jpg',
-    					medium: 'Pump and Flood (Phase 3), 22" x 30" Mixed media on paper. 2018.',
-    					quote: 'In the early 20th century, new technologies enabled us to drain and build on this swamp. This has caused the ground to sink, and required even more robust drainage systems and levees to address the new risks created.'
-    				},
-    				{
-    					type: 'portrait+image+quote',
-    					imgUrl: 'water-series/4-12192019.jpg',
-    					medium: 'Rain Garden and Breathing Room (Phase 4), 22" x 30" Mixed media on paper. 2018.',
-    					quote: 'This old swamp land is like a sponge. The ebb and flow of water is unruly, and an urban landscape that can accommodate this water will be more stable.'
-    				},
-    				{
-    					type: 'portrait+image+quote',
-    					imgUrl: 'water-series/5-12192019.jpg',
-    					medium: 'Living with Water (Phase 5), 22" x 30" Mixed media on paper. 2018.',
-                        quote: 'As voters, policy makers, taxpayers, property owners, educators and students, we can play a role in stabilizing the land by reducing paved areas and by creating lush urban landscapes that are designed to collect and absorb the water that falls from the sky.'
-    				},
-                    {
-                        type: 'landscape+image+text',
-                        imgUrl: 'water-series/6-12192019.jpg',
-                        text: 'In-studio jumble of the Water Series in progress.',
-                        artistName: 'Photo by Anne Nelson'
-                    }
-    			]
-    		},
-    		'/gallery/behind-the-scenes': {
-    			gallery: [	
-    				{
-    					type: 'landscape+image+text',
-    					imgUrl: 'behind-the-scenes/1a.jpg',
-    					text: 'Mixed Media dinner (this image) and Water Leaders Institute workshop (next image). Artists join engineers, planners, water experts, and neighborhood leaders in studying historic maps and systems diagrams, seeking to understand the ways in which New Orleans and its water systems have evolved over time. A basic premise of both this project and the Water Leaders Institute is that science and decision-making must be connected to culture and community.',
-    					artistName: 'Photos by Maggie Hermann'
-    				},
-    				{
-    					type: 'landscape+image',
-    					imgUrl: 'behind-the-scenes/1d.jpg'
-    				},
-    				{
-    					type: 'landscape+image+text',
-    					imgUrl: 'behind-the-scenes/2a.jpg',
-    					text: 'Anne Nelson looks to historic newspaper prints and experiments with different modes of drawing to explore possibilities for representing the past, present, and future of water management in New Orleans.',
-    					artistName: 'Print from Tuscaloosa Times'
-    					
-    				},
-    				{
-    					type: 'landscape+image+text',
-    					imgUrl: 'behind-the-scenes/2b.jpg',
-    					text: 'Anne looks to historic newspaper prints and experiments with different modes of drawing to explore possibilities for representing the past, present, and future of water management in New Orleans.',
-    					artistName: 'Drawing by Anne Nelson'
-    				},
-    				{
-    					type: 'landscape+image+text',
-    					imgUrl: 'behind-the-scenes/2c.jpg',
-    					text: 'As a result of her Mixed Media explorations and her participation in the 2018 Water Leaders Institute neighborhood leaders cohort, Anne joins neighborhood leader Janet Tobias in presenting what they’ve learned to their neighbors at a St. Roch Neighborhood Association meeting.',
-    					artistName: 'Photo provided by Janet Tobias'
-    					
-    				},
-    				{
-    					type: 'landscape+image+text',
-    					imgUrl: 'behind-the-scenes/3a.jpg',
-    					text: 'In summer 2019, the Mixed Media team visits drainage pump stations around New Orleans with photographers Christine “CFreedom” Brown and Maggie Hermann. General Superintendent Bob Turner (above) and Drainage and Sewerage Superintendent Gerald Tilton connect us to pump station operators at DPS 1, 4, 19, Station D, and also the London Avenue Canal Closure Structure.',
-    					artistName: 'Photo by Maggie Hermann'
-    					
-    				},
-    				{
-    					type: 'landscape+image+text',
-    					imgUrl: 'behind-the-scenes/4a.jpg',
-    					text: 'CFreedom engaging pump station operators and working to capture what it is like to be inside a pump station.',
-    					artistName: 'Photos by Alex Stokes'	
-    				},
-    				{
-    					type: 'landscape+image',
-    					imgUrl: 'behind-the-scenes/4b.jpg'
-    				},
-    				{
-    					type: 'landscape+image',
-    					imgUrl: 'behind-the-scenes/5a.jpg',
-                        text: 'Maggie Hermann during pump station visits. Throughout this period, we keep close track of the weather, hoping to capture different aspects of drainage operations by visiting pump stations during different hours of the day, when it is pouring rain, and also when it is sunny and dry, all the while asking questions and trying to stay out of the way.',
-                        artistName: 'Photos by Aron Chang and CFreedom'
-    				},
-    				{
-    					type: 'landscape+image+text',
-    					imgUrl: 'behind-the-scenes/5b.jpg'	
-    				},
-    			]
-    		}
-    	}
-    }
-  },
-  delimiters: ['[[',']]'],
-  props: ['title', 'subtitle', 'description'],
-  methods: {
-  	sideBarModule: function(type) {
-  		return ;
-  	},
-    galleryArray: function() {
-    	var path = document.location.pathname;
-    	let artists = this.artists;
-		return artists[path].gallery;
-	},
-	galleryArrayLength: function() {
-		var path = document.location.pathname;
-    	let artists = this.artists;
-		return artists[path].gallery.length;	
-	},
-	showArt: function(index) {
-		return this.currentSlide === index;
-	},
-	chooseArt: function(index) {
-		this.currentSlide = index;
-	},
-	url: function(path) {
-		return 'https://cdn.mxd.media/' + path;
-  	}
-  }
-})
+                    gallery: [
+                        {
+                            type: 'paragraph',
+                            text: '<p>For this second issue of Mixed Media, artist Anne Nelson created works that explore ways in which the water that falls from the sky interacts with soils, plants, people, pipes, and pumps.</p><p>Through participating in Mixed Media and a <a href="https://www.waterleadersinstitute.com/">Water Leaders Institute</a> cohort, Anne joined New Orleans\' neighborhood leaders to engage with technical experts in a dialogue around water management, resilience, and community-based planning.</p><p>The images and words in this series are by Anne.</p>'
+                        },
+                        {
+                            type: 'portrait+image+quote',
+                            imgUrl: 'water-series/1-12192019.jpg',
+                            medium: 'Marsh (Phase 1), 22" x 30" Mixed media on paper. 2018.',
+                            quote: 'Abstraction is my primary way of working, because it presents a new, previously unseen field to the viewer. Abstraction can stop us short and make us see something actually fresh.'
+                        },
+                        {
+                            type: 'portrait+image+quote',
+                            imgUrl: 'water-series/2-12192019.jpg',
+                            medium: 'Swamp Sponge (Phase 2), 22" x 30" Mixed media on paper. 2018.',
+                            quote: 'When New Orleans was founded, it was a colony set on firmer, higher ground nearest to the river. The city was surrounded by swamp.'
+                        },
+                        {
+                            type: 'portrait+image+quote',
+                            imgUrl: 'water-series/3-12192019.jpg',
+                            medium: 'Pump and Flood (Phase 3), 22" x 30" Mixed media on paper. 2018.',
+                            quote: 'In the early 20th century, new technologies enabled us to drain and build on this swamp. This has caused the ground to sink, and required even more robust drainage systems and levees to address the new risks created.'
+                        },
+                        {
+                            type: 'portrait+image+quote',
+                            imgUrl: 'water-series/4-12192019.jpg',
+                            medium: 'Rain Garden and Breathing Room (Phase 4), 22" x 30" Mixed media on paper. 2018.',
+                            quote: 'This old swamp land is like a sponge. The ebb and flow of water is unruly, and an urban landscape that can accommodate this water will be more stable.'
+                        },
+                        {
+                            type: 'portrait+image+quote',
+                            imgUrl: 'water-series/5-12192019.jpg',
+                            medium: 'Living with Water (Phase 5), 22" x 30" Mixed media on paper. 2018.',
+                            quote: 'As voters, policy makers, taxpayers, property owners, educators and students, we can play a role in stabilizing the land by reducing paved areas and by creating lush urban landscapes that are designed to collect and absorb the water that falls from the sky.'
+                        },
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'water-series/6-12192019.jpg',
+                            text: 'In-studio jumble of the Water Series in progress.',
+                            artistName: 'Photo by Anne Nelson'
+                        }
+                    ]
+                },
+                '/gallery/behind-the-scenes': {
+                    gallery: [  
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'behind-the-scenes/1a.jpg',
+                            text: 'Mixed Media dinner (this image) and Water Leaders Institute workshop (next image). Artists join engineers, planners, water experts, and neighborhood leaders in studying historic maps and systems diagrams, seeking to understand the ways in which New Orleans and its water systems have evolved over time. A basic premise of both this project and the Water Leaders Institute is that science and decision-making must be connected to culture and community.',
+                            artistName: 'Photos by Maggie Hermann'
+                        },
+                        {
+                            type: 'landscape+image',
+                            imgUrl: 'behind-the-scenes/1d.jpg'
+                        },
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'behind-the-scenes/2a.jpg',
+                            text: 'Anne Nelson looks to historic newspaper prints and experiments with different modes of drawing to explore possibilities for representing the past, present, and future of water management in New Orleans.',
+                            artistName: 'Print from Tuscaloosa Times'
+                            
+                        },
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'behind-the-scenes/2b.jpg',
+                            text: 'Anne looks to historic newspaper prints and experiments with different modes of drawing to explore possibilities for representing the past, present, and future of water management in New Orleans.',
+                            artistName: 'Drawing by Anne Nelson'
+                        },
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'behind-the-scenes/2c.jpg',
+                            text: 'As a result of her Mixed Media explorations and her participation in the 2018 Water Leaders Institute neighborhood leaders cohort, Anne joins neighborhood leader Janet Tobias in presenting what they’ve learned to their neighbors at a St. Roch Neighborhood Association meeting.',
+                            artistName: 'Photo provided by Janet Tobias'
+                            
+                        },
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'behind-the-scenes/3a.jpg',
+                            text: 'In summer 2019, the Mixed Media team visits drainage pump stations around New Orleans with photographers Christine “CFreedom” Brown and Maggie Hermann. General Superintendent Bob Turner (above) and Drainage and Sewerage Superintendent Gerald Tilton connect us to pump station operators at DPS 1, 4, 19, Station D, and also the London Avenue Canal Closure Structure.',
+                            artistName: 'Photo by Maggie Hermann'
+                            
+                        },
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'behind-the-scenes/4a.jpg',
+                            text: 'CFreedom engaging pump station operators and working to capture what it is like to be inside a pump station.',
+                            artistName: 'Photos by Alex Stokes' 
+                        },
+                        {
+                            type: 'landscape+image',
+                            imgUrl: 'behind-the-scenes/4b.jpg'
+                        },
+                        {
+                            type: 'landscape+image',
+                            imgUrl: 'behind-the-scenes/5a.jpg',
+                            text: 'Maggie Hermann during pump station visits. Throughout this period, we keep close track of the weather, hoping to capture different aspects of drainage operations by visiting pump stations during different hours of the day, when it is pouring rain, and also when it is sunny and dry, all the while asking questions and trying to stay out of the way.',
+                            artistName: 'Photos by Aron Chang and CFreedom'
+                        },
+                        {
+                            type: 'landscape+image+text',
+                            imgUrl: 'behind-the-scenes/5b.jpg'  
+                        },
+                    ]
+                }
+            }
+        }
+      },
+      delimiters: ['[[',']]'],
+      props: ['title', 'subtitle', 'description'],
+      methods: {
+        sideBarModule: function(type) {
+            return ;
+        },
+        galleryArray: function() {
+            var path = document.location.pathname;
+            let artists = this.artists;
+            return artists[path].gallery;
+        },
+        galleryArrayLength: function() {
+            var path = document.location.pathname;
+            let artists = this.artists;
+            return artists[path].gallery.length;    
+        },
+        showArt: function(index) {
+            return this.currentSlide === index;
+        },
+        chooseArt: function(index) {
+            this.currentSlide = index;
+        },
+        url: function(path) {
+            return 'https://cdn.mxd.media/' + path;
+        }
+      }
+    })
 
-new Vue({
-    el: '#bottom-sheet',
-    data: {
-        bottomSheetOpen: true
-    },
-    delimiters: ['[[',']]'],
-});
+    new Vue({
+        el: '#bottom-sheet',
+        data: {
+            bottomSheetOpen: true
+        },
+        delimiters: ['[[',']]'],
+    });
+
+})();
 
 </script>
