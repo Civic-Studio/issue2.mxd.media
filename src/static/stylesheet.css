@@ -437,6 +437,7 @@ div.home-final-wrapper > div > article a:last-child img {
 .essay-wrapper .essay-headline {
 	max-width: 620px;
 	margin: auto;
+	padding: 0 24px;
 }
 
 .essay-wrapper .essay-headline h1 {
