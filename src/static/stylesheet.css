@@ -81,11 +81,17 @@ div.home-final-wrapper > div > article a:last-child img {
 .intro-tiles h1,
 .base-wrapper h1 {
 	margin: 12px;
-    font-weight: 400;
+    font-weight: 200;
     text-transform: uppercase;
     color: #aaa;
     font-size: 14px;
     text-align: center;
+}
+
+.base-wrapper h3 {
+	max-width: 620px;
+	margin: auto;
+	padding-left: 12px;
 }
 
 .intro-tiles article blockquote {
@@ -117,6 +123,15 @@ div.home-final-wrapper > div > article a:last-child img {
 	justify-content: center;
 }
 
+.base-wrapper a button {
+	display: block;
+	margin: auto;
+}
+
+.base-wrapper a.btn {
+	text-decoration: none;
+}
+
 .intro-tiles .row,
 .base-wrapper .row {
 	display: flex;
@@ -131,51 +146,35 @@ div.home-final-wrapper > div > article a:last-child img {
 	padding: 0px 12px;
 }
 
-.intro-tiles .row ol {
+.intro-tiles .row ul {
 	padding: 10px 10px 0px 48px;
 	max-width: 400px;
 }
 
-.intro-tiles .row ol li {
+.intro-tiles .row ul li {
 	display: flex;
     color: black;
     font-family: serif;
     padding: 12px;
     margin: 6px;
     flex-flow: column;
-    counter-increment: list;
+    list-style: circle;
     position: relative;
 }
 
-.intro-tiles .row ol li:before {
-	background-color: rgb(70, 130, 180);
-	border-radius: 13px;
-	content: counter(list);
-	color: white;
-	font-weight: 400;
-	font-size: 11px;
-	text-indent: 9px;
-    padding-left: 0;
-    height: 24px;
-    width: 24px;
-    line-height: 24px;
-    vertical-align: top;
-    left: -24px;
-    position: absolute;
-}
-
-.intro-tiles .row ol li b {
+.intro-tiles .row ul li b {
 	display: block;
 	text-transform: uppercase;
 	font-weight: 200;
 }
 
-.intro-tiles .row ol li span {
+.intro-tiles .row ul li span {
 	display: block;
 }
 
 .base-wrapper .intro-tiles article.events-article {
 	display: flex;
+	justify-content: center;
 }
 
 @media screen and (max-width: 980px) {
@@ -183,46 +182,6 @@ div.home-final-wrapper > div > article a:last-child img {
 		display: flex;
 		flex-flow: column;
 	}
-}
-
-.events-article {
-	position: relative;
-}
-
-#events-1,
-#events-2,
-#events-3 {
-	position: relative;
-}
-
-#events-1:before {
-	content: 'Coffee and Conversation Series';
-	position: absolute;
-	font-family: 'Open Sans';
-	left: 30px;
-	text-decoration: underline;
-	font-weight: 200;
-	top: -5px;
-}
-
-#events-2:before {
-	content: 'Exhibition Openings and Dialogue';
-    position: absolute;
-    font-family: 'Open Sans';
-    left: 30px;
-    text-decoration: underline;
-    font-weight: 200;
-    top: -5px;
-}
-
-#events-3:before {
-	content: 'Creative Workshops';
-	position: absolute;
-	font-family: 'Open Sans';
-	left: 30px;
-	text-decoration: underline;
-	font-weight: 200;
-	top: -5px;
 }
 
 .series-titles {
@@ -442,7 +401,7 @@ div.home-final-wrapper > div > article a:last-child img {
     border-style: solid;
     border-color: transparent rgb(70, 130, 180) transparent transparent;
     border-width: 40px 40px 40px 0;
-    top: 45%;
+    bottom: 0;
     z-index: 999;
 }
 
@@ -453,7 +412,7 @@ div.home-final-wrapper > div > article a:last-child img {
 	border-style: solid;
 	border-color: transparent transparent transparent rgb(70, 130, 180);
 	border-width: 40px 0 40px 40px;
-	top: 45%;
+	top: 0;
 	z-index: 999;
 }
 
@@ -523,9 +482,9 @@ div.home-final-wrapper > div > article a:last-child img {
 
 .gallery-wrapper p {
 	max-width: 620px;
-	text-align: center;
-	font-weight: 200;
-	margin: auto;
+    padding-bottom: 24px;
+    font-weight: 200;
+    margin: auto;
 }
 
 .essay-wrapper h2 {
@@ -795,15 +754,23 @@ figcaption.side-by-side {
 	position: relative;
 }
 
-.art-gallery-item .landscape-image-text figcaption {
-	position: absolute;
-    font-size: 12px;
-    background-color: rgba(0,0,1,.95);
-    color: white;
-    right: -14px;
-    bottom: -11px;
-    padding: 12px;
-    max-width: 50%;
+@media screen and (min-width: 620px) {
+	.art-gallery-item .landscape-image-text figcaption {
+		position: absolute;
+	    font-size: 12px;
+	    background-color: rgba(0,0,1,.95);
+	    color: white;
+	    right: -14px;
+	    bottom: -11px;
+	    padding: 12px;
+	    max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.art-gallery-item .landscape-image-text figcaption {
+		display: none;
+	}
 }
 
 .art-gallery-item .landscape-image-text figcaption span {
@@ -903,7 +870,6 @@ nav a {
 	font-weight: 200;
 	padding: 0 0 0 20px;
 	display: block;
-	width: 100%;
 }
 
 /* Desktop Nav */
@@ -1025,6 +991,8 @@ footer div {
 
 .essay-nav-container {
     padding: 24px;
+    max-width: 620px;
+    margin: auto;
 }
 
 .essay-nav-container h3 {

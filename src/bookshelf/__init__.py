@@ -9,7 +9,10 @@ csp = {
         '\'self\'',
         '*.mxd.media'
     ],
-    'img-src': '*.mxd.media',
+    'img-src': [
+        '*.mxd.media',
+        'data:'
+    ],
     'style-src': [
     	'\'self\'',
     	'https://fonts.googleapis.com',

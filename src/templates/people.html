@@ -1,33 +1,31 @@
 {% extends 'base.html' %}
-
 {% block metadata_name %}
-
     {% for key, item in metadata_name.items() %}
         <meta name="{{ key }}" content="{{ item }}" />
     {% endfor %}
-
 {% endblock %}
-
 {% block metadata_property %}
-
     {% for key, item in metadata_property.items() %}
         <meta property="{{ key }}" content="{{ item }}" />
     {% endfor %}
-
 {% endblock %}
-
 {% block content %}
     <article>
+        <p>
+            Mixed Media: Water Systems brought together artists, researchers, planners, scientists, journalists, facilitators, curators, Sewerage & Water Board staff, and resident leaders to produce civically-oriented artwork, media content, and public events.
+        </p>
         <h1>{% block title %}Artists{% endblock %}</h1>
         <p>
-        <b>Carole Alden</b> is an outsider visual artist. Her work draws inspiration from her surroundings. She strives to uplift and expand perceptions by repurposing ordinary materials for extraordinary projects. Learn more about Carole and her work <a href="https://heritageandarts.utah.gov/meet-the-utah-artist-who-is-crocheting-her-way-to-a-new-life/">here</a>.
-        </p><p>
-        <b>Christine “CFreedom” Brown</b> is a New Orleans visual and performing artist on a mission of bringing back positive images, music, and happenings to the Black community. Connected to photography in 2007 by Carol Bebelle, Douglas Redd, and Ashé Cultural Arts Center, CFreedom became a freelance contributor to Essence Magazine in 2009. Soon after, she founded The Essence of N.O.W., a photography party that celebrates, features, and archives New Orleans women. Visit <a href="https://cfreedomphotography.zenfolio.com/?fbclid=IwAR344X-OKiy2g_01GSbZCRChNwhHsaCq43DKNIHNQA4F-wQ-cV5mYCULxBU">cfreedomphotography.com</a> and <a href="https://www.instagram.com/cfreedomphotography/">@cfreedomphotography</a> to learn more.
-        </p><p>
-        <b>Maggie Hermann</b> is an audio/visual documentarian and evaluator, committed to amplifying the truths and narratives of human relationships to the social and physical environments. She listens, learns, and contributes to actionable change by capturing the rich details of the individual and collective human experience with camera, microphone, and pen. 
-        </p><p>
-        <b>Anne Nelson</b> is a painter and Professor of Practice in painting and drawing at Tulane University. Originally from Minnesota, Anne has been living and working in Louisiana for the last nine years. She is a founding member at Staple Goods Gallery and Collective. Nelson’s work is usually rooted in abstraction, a painterly language rich with the possibility of evoking emotion, disorientation, and remembrance. Her work can be viewed at <a href="http://www.postmedium.com/annecnelson">www.postmedium.com/annecnelson</a>.
+            <b>Carole Alden</b> is an outsider visual artist. Her work draws inspiration from her surroundings. She strives to uplift and expand perceptions by repurposing ordinary materials for extraordinary projects. Learn more about Carole and her work <a target="_blank" href="https://heritageandarts.utah.gov/meet-the-utah-artist-who-is-crocheting-her-way-to-a-new-life/">here</a>.
+        </p>
+        <p>
+            <b>Christine “CFreedom” Brown</b> is a New Orleans visual and performing artist on a mission of bringing back positive images, music, and happenings to the Black community. Connected to photography in 2007 by Carol Bebelle, Douglas Redd, and Ashé Cultural Arts Center, CFreedom became a freelance contributor to Essence Magazine in 2009. Soon after, she founded The Essence of N.O.W., a photography party that celebrates, features, and archives New Orleans women. Visit <a target="_blank" href="https://cfreedomphotography.zenfolio.com/?fbclid=IwAR344X-OKiy2g_01GSbZCRChNwhHsaCq43DKNIHNQA4F-wQ-cV5mYCULxBU">cfreedomphotography.com</a> and <a target="_blank" href="https://www.instagram.com/cfreedomphotography/">@cfreedomphotography</a> to learn more.
+        </p>
+        <p>
+            <b>Maggie Hermann</b> is an audio/visual documentarian and researcher, committed to amplifying narratives of human relationships to the social and physical environments in which they exist. She recently worked with Central City Renaissance Alliance to implement and document community engagement and experiential learning programs across issues like water, health, transit, and economic opportunity. Maggie currently works with the Children & Youth Planning Board, co-creating positive youth narratives in New Orleans.
+        </p>
+        <p>
+            <b>Anne Nelson</b> is a painter and Professor of Practice in painting and drawing at Tulane University. Originally from Minnesota, Anne has been living and working in Louisiana for the last nine years. She is a founding member at Staple Goods Gallery and Collective. Nelson’s work is usually rooted in abstraction, a painterly language rich with the possibility of evoking emotion, disorientation, and remembrance. Her work can be viewed at <a target="_blank" href="http://www.postmedium.com/annecnelson">www.postmedium.com/annecnelson</a>.
         </p>
     </article>
 {% endblock %}
-
