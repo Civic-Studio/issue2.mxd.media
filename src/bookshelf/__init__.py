@@ -33,4 +33,7 @@ csp = {
 app = Flask(__name__, static_folder=None)
 app.register_blueprint(main, url_prefix='')
 
+app.config['CDN_URL'] = 'https://cdn.mxd.media/'
+app.config['CDN_HASH'] = '-12192019'
+
 Talisman(app, content_security_policy=csp)

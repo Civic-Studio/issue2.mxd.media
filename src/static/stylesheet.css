@@ -88,11 +88,6 @@ div.home-final-wrapper > div > article a:last-child img {
     text-align: center;
 }
 
-article.blockquote-container {
-	border-top: 1px solid rgba(0,0,0,.1);
-	border-bottom: 1px solid rgba(0,0,0,.1);
-}
-
 .intro-tiles article blockquote {
 	font-size: 32px;
     color: #000;
@@ -803,12 +798,17 @@ figcaption.side-by-side {
 .art-gallery-item .landscape-image-text figcaption {
 	position: absolute;
     font-size: 12px;
-    background-color: rgba(0,0,1,.75);
+    background-color: rgba(0,0,1,.95);
     color: white;
-    right: 0;
-    bottom: 5px;
-    padding: 6px;
+    right: -14px;
+    bottom: -11px;
+    padding: 12px;
     max-width: 50%;
+}
+
+.art-gallery-item .landscape-image-text figcaption span {
+	text-align: right;
+	display: block;
 }
 
 /* ---- */
@@ -833,7 +833,7 @@ figcaption.side-by-side {
 }
 
 .art-gallery-item blockquote {
-	font-size: 18px;
+	font-size: 24px;
 	font-family: serif;
 	font-style: italic;
 	text-align: center;
