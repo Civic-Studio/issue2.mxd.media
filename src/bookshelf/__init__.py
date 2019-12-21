@@ -16,18 +16,15 @@ csp = {
     'style-src': [
     	'\'self\'',
     	'https://fonts.googleapis.com',
-        'https://*.typekit.net',
     	'\'unsafe-inline\''
     ],
     'font-src': [
     	'\'self\'',
     	'https://fonts.gstatic.com',
-        'https://*.typekit.net'
     ],
     'script-src': [
         'https://*.mxd.media',
         '\'self\'',
-        '\'unsafe-inline\'',
         '\'unsafe-eval\''
     ]
 }
