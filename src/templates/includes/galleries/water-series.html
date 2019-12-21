@@ -51,7 +51,7 @@
 		<div class="paragraphs" v-if="art.type === 'paragraph'">
 			<div v-html="art.text"></div>
 		</div>
-		
+
 		<div>
 			<span id="forward-item-gallery" v-if="galleryArrayLength() - 1 > index  " v-on:click="chooseArt(index + 1)"></span>
 		</div>

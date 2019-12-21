@@ -3,6 +3,7 @@
   {% block head %}
       <title>Mixed Media - Issue #2 | Mixed Media </title>
       {% include "includes/components/head-tag.html" %}
+      <script src="https://cdn.mxd.media/vue.min.js"></script>
   {% endblock %}
 </head>
 <body>
@@ -10,7 +11,7 @@
   <div id="app">
     <div class="essay-wrapper">
       {% if title == "pump-station-operators-individual" %}
-        
+
         {% include 'includes/essays/pump-station-operators-individual.html' %}
 
       {% elif title == 'pump-station-operators-team' %}

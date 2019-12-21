@@ -46,12 +46,6 @@ body {
 	padding: 0 12px;
 }
 
-
-.home-final-wrapper div article {
-	display: flex;
-	flex-flow: row;
-}
-
 .home-final-wrapper div article p {
 	flex: 2;
 }
@@ -399,6 +393,7 @@ div.home-final-wrapper > div > article a:last-child img {
 	position: absolute;
     font-size: 30px;
     cursor: pointer;
+    z-index: 1;
 }
 
 #back-item-gallery {
@@ -409,7 +404,6 @@ div.home-final-wrapper > div > article a:last-child img {
     border-color: transparent rgba(70, 130, 180, 0.75) transparent transparent;
     border-width: 40px 40px 40px 0;
     bottom: 0;
-    z-index: 999;
 }
 
 #forward-item-gallery {
@@ -420,7 +414,6 @@ div.home-final-wrapper > div > article a:last-child img {
 	border-color: transparent transparent transparent rgba(70, 130, 180, 0.75);
 	border-width: 40px 0 40px 40px;
 	top: 0;
-	z-index: 999;
 }
 
 /* Essays */
@@ -544,7 +537,7 @@ article.text-content {
 .essay-wrapper article figcaption {
 	font-size: 16px;
 	max-width: 620px;
-	padding: 24px;
+	padding: 12px;
 	font-weight: 200;
 }
 
@@ -775,6 +768,7 @@ figcaption.side-by-side {
     text-align: center;
     padding: 4px 0;
     font-family: serif;
+    font-size: 12px;
 }
 
 /* Nav */
@@ -888,9 +882,8 @@ footer div {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
-	display: flex;
-	justify-content: center;
 	left: 0;
+	z-index: 999;
 }
 
 .art-gallery-nav {
@@ -903,6 +896,7 @@ footer div {
 	border-top: 1px solid rgba(0,0,0,.9);
 	border-left: 1px solid rgba(0,0,0,.9);
 	border-right: 1px solid rgba(0,0,0,.9);
+	margin: auto;
 }
 
 .art-gallery-nav:hover {
@@ -917,7 +911,7 @@ footer div {
     border-radius: 50%;
     width: 22px;
     text-align: center;
-    bottom: 6px;
+    bottom: 7px;
     font-weight: 800;
 }
 
@@ -927,6 +921,7 @@ footer div {
 	justify-content: space-between;
 	flex-flow: row;
 	position: relative;
+	height: 36px;
 }
 
 .bottom-sheet-row-1:hover {
@@ -1037,11 +1032,21 @@ footer div {
 	.image-orientation-direction-desktop {
 		display: none;
 	}
+
+	.home-final-wrapper div article {
+		display: flex;
+		flex-flow: column;
+	}
 }
 
 @media screen and (min-width: 980px) {
 	.image-orientation-direction-mobile {
 		display: none;
+	}
+
+	.home-final-wrapper div article {
+		display: flex;
+		flex-flow: row;
 	}
 }
 
@@ -1076,8 +1081,6 @@ footer div {
 }
 
 @media screen and (max-width: 800px) {
-
-
 
 	.art-gallery-item .portrait-image-quote {
 		flex-flow: column;

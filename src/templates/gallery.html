@@ -3,6 +3,7 @@
   {% block head %}
       <title>{% block title %}{% endblock %} - Issue #2 | Mixed Media </title>
       {% include "includes/components/head-tag.html" %}
+      <script src="https://cdn.mxd.media/vue.min.js"></script>
   {% endblock %}
 </head>
 <body>
@@ -14,6 +15,9 @@
     	{% elif series == 'water-series' %}
     	  {% include 'includes/galleries/water-series.html' %}
     	{% endif %}
+
+      <hr>
+      {% include "includes/components/essay-nav.html" %}
     </div>
   </div>
   {% include 'includes/components/simple-footer.html' %}

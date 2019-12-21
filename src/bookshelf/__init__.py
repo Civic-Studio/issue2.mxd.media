@@ -7,7 +7,7 @@ from flask_talisman import Talisman
 csp = {
     'default-src': [
         '\'self\'',
-        '*.mxd.media'
+        'https://*.mxd.media'
     ],
     'img-src': [
         '*.mxd.media',
@@ -25,7 +25,7 @@ csp = {
         'https://*.typekit.net'
     ],
     'script-src': [
-        'https://cdn.jsdelivr.net/npm/vue',
+        'https://*.mxd.media',
         '\'self\'',
         '\'unsafe-inline\'',
         '\'unsafe-eval\''
