@@ -441,19 +441,15 @@ div.home-final-wrapper > div > article a:last-child img {
 	position: relative;
 }
 
-.essay-wrapper .essay-headline h1::before {
-    position: absolute;
-    content: 'PHOTO ESSAY';
-    font-size: 12px;
-    top: -15px;
-}
-
 .essay-wrapper .essay-headline p {
 	font-weight: 200;
+	color: #aaa;
 }
 
+
+
 #app hr, .base-wrapper hr, .essay-wrapper hr {
-	width: 10%;
+	width: 100px;
     margin: 65px auto;
     transform: rotate(-4.2deg);
     background-color: rgba(0,0,1,0.5);
@@ -471,16 +467,6 @@ div.home-final-wrapper > div > article a:last-child img {
     font-weight: 200;
     text-transform: uppercase;
     position: relative;
-}
-
-.gallery-wrapper h1::before {
-    position: absolute;
-    content: 'GALLERY';
-    font-size: 12px;
-    top: -15px;
-    text-align: center;
-    margin-left: -20px;
-    left: 50%;
 }
 
 .gallery-wrapper p {
@@ -890,6 +876,10 @@ nav a {
 
 /* Mobile Nav */
 @media screen and (max-width: 800px) {
+	nav a:first-child {
+		padding: 0;
+	}
+
 	nav.mobile {
 		display: flex;
 	}
