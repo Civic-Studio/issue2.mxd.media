@@ -4,14 +4,14 @@
       {
         "title": "Water Series",
         "description": "Paintings by Anne Nelson",
-        "background_image": "https://cdn.mxd.media/water-series/1.jpg",
+        "background_image": "https://cdn.mxd.media/water-series/1-12192019.jpg",
         "link": "/gallery/water-series",
         "flex_val": 2
       },
       {
         "title": "What Does a Pump Station Do?",
         "description": "Photos by CFreedom and Maggie Hermann",
-        "background_image": "https://cdn.mxd.media/what-does-pump-do/5c.jpg",
+        "background_image": "https://cdn.mxd.media/what-does-pump-do/5c-12192019.jpg",
         "link": "/essay/what-does-a-pump-station-do",
         "flex_val": 2
       }
@@ -22,14 +22,14 @@
       {
         "title": "Pump Station Operators",
         "description": "Photos by CFreedom and Maggie Hermann",
-        "background_image": "https://cdn.mxd.media/pump-operators-individual/1a.jpg",
+        "background_image": "https://cdn.mxd.media/pump-operators-individual/1a-12192019.jpg",
         "link": "/essay/pump-station-operators-individual",
         "flex_val": 2
       },
       {
         "title": "Communications and Teamwork",
         "description": "Photos by CFreedom and Maggie Hermann",
-        "background_image": "https://cdn.mxd.media/pump-operators-team/1a.jpg",
+        "background_image": "https://cdn.mxd.media/pump-operators-team/1a-12192019.jpg",
         "link": "/essay/pump-station-operators-team",
         "flex_val": 2
       }
@@ -40,21 +40,21 @@
       {
         "title": "Morning at DPS 19",
         "description": "Photos by Maggie Hermann",
-        "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
+        "background_image": "https://cdn.mxd.media/what-does-pump-do/3b-12192019.jpg",
         "link": "/essay/watch-morning",
         "flex_val": 2
       },
       {
         "title": "Day After a Storm",
         "description": "Photos by CFreedom",
-        "background_image": "https://cdn.mxd.media/day-after-storm/2a.jpg",
+        "background_image": "https://cdn.mxd.media/day-after-storm/2a-12192019.jpg",
         "link": "/essay/day-after-a-storm",
         "flex_val": 2
       },
       {
         "title": "Evening at Station D",
         "description": "Photos by CFreedom",
-        "background_image": "https://cdn.mxd.media/day-after-storm/2c.jpg",
+        "background_image": "https://cdn.mxd.media/day-after-storm/2c-12192019.jpg",
         "link": "/essay/evening-at-station-d",
         "flex_val": 2
       }
@@ -65,14 +65,14 @@
       {
         "title": "Keeping the Pumps Running",
         "description": "Photos by CFreedom and Maggie Hermann",
-        "background_image": "https://cdn.mxd.media/what-does-pump-do/3b.jpg",
+        "background_image": "https://cdn.mxd.media/what-does-pump-do/3b-12192019.jpg",
         "link": "/essay/keeping-the-pumps-running",
         "flex_val": 2
       },
       {
         "title": "Challenges",
         "description": "Photos by CFreedom and Maggie Hermann",
-        "background_image": "https://cdn.mxd.media/challenges/1b.jpg",
+        "background_image": "https://cdn.mxd.media/challenges/1b-12192019.jpg",
         "link": "/essay/challenges",
         "flex_val": 2
       }
@@ -83,7 +83,7 @@
       {
         "title": "Water Creature",
         "description": "Floating Sculpture by Carole Alden",
-        "background_image": "https://cdn.mxd.media/water-creature/1a.jpg",
+        "background_image": "https://cdn.mxd.media/water-creature/1a-12192019.jpg",
         "link": "/essay/water-creatures",
         "flex_val": 4
       }

@@ -1,6 +1,25 @@
 <div id="vue-app">
 	<h1>Behind the Scenes</h1>
-	<p>A combination of images taken by Aron, Anjelina, Alex, Maggie, and C that describe the progression of both Anne Nelson’s work and the photography project.</p>
+
+	<p>
+		How did we structure this work of exploring the city’s water systems? We started in Summer 2018 with a period of <a href="https://drive.google.com/open?id=1LO7c4GVWlkaqvaA5BqjZwoOEX6e5l9aq7mYC8uvPJzg">building shared knowledge</a>. We hosted a dinner and salons that brought together artists, SWBNO employees, planners, and scientists to explore the past, present, and possible futures of water management in this delta city.	
+	</p>
+
+	<p>
+		Artist Anne Nelson took part in the pilot cohort of the <a href="https://www.waterleadersinstitute.com/">Water Leaders Institute</a>, through which she  joined 20 neighborhood leaders from around New Orleans in visiting water management sites, mapping the flow of water through the city, sharing stories of the impact of water on our lives, and developing skills and practices around community advocacy. At the same time, Nelson experimented with different forms of representation before settling on a more abstract method of painting and collage to create her “Water Cycle” pieces.			
+	</p>
+	<p>
+		In summer 2019, photographers <a href="https://cfreedomphotography.zenfolio.com/f279627192">Christine “CFreedom” Brown</a> and Maggie Hermann began visiting drainage pump stations around New Orleans, including DPS 1 in Hoffman Triangle, DPS 4 in Gentilly, DPS 19 in the Eigth Ward, Station D in the Upper Ninth Ward, and also the recently-completed <a href="https://www.mvn.usace.army.mil/Missions/HSDRRS/PCCP/London-Ave-PCCP/">London Avenue Permanent Canal Closure and Pump</a>.		
+	</p>
+
+	<p>
+		Aron Chang, Anjelina Durio, Liam Grealy, and Alex Stokes accompanied the photographers on these visits, in order to help capture the stories and insights shared by the pump station operators who generously opened up their places of work and their time with the Mixed Media team. Each visit was an opportunity to observe, ask simple questions, listen and feel, and try to wrap our heads around the inner workings of a complex system that is central to the functioning of our city.		
+	</p>
+
+	<p>
+		Our goal is to share what we learned on those visits about infrastructure, and about the people who work in the drainage pump stations, and whose skilled labor is necessary and inextricable from the history of New Orleans drainage infrastructure, the local environment, and the SWBNO bureaucracy.
+	</p>
+
 	<div class="art-gallery-item" v-for="(art, index) in galleryArray()" v-show="showArt(index)">
 		<span id="back-item-gallery" v-if="index > 0" v-on:click="chooseArt(index - 1)"></span>
 		<div class="special-gallery-item" v-if="art.type === 'special+gallery+item'">
