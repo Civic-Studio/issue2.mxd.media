@@ -95,6 +95,11 @@ div.home-final-wrapper > div > article a:last-child img {
     font-size: 26px;
 }
 
+.base-wrapper h1,
+.gallery-wrapper h1 {
+	text-align: center;
+}
+
 .base-wrapper h3 {
 	max-width: 620px;
 	font-weight: 200;
@@ -203,6 +208,7 @@ div.home-final-wrapper > div > article a:last-child img {
     background-blend-mode: multiply;
     background-color: grey;
     background-position-x: center;
+    background-position-y: center;
 }
 
 .series-titles p {
@@ -402,8 +408,8 @@ div.home-final-wrapper > div > article a:last-child img {
     height: 0;
     border-style: solid;
     border-color: transparent rgba(70, 130, 180, 0.75) transparent transparent;
-    border-width: 40px 40px 40px 0;
-    bottom: 0;
+    border-width: 20px 20px 20px 0;
+    top: 45%;
 }
 
 #forward-item-gallery {
@@ -412,8 +418,8 @@ div.home-final-wrapper > div > article a:last-child img {
 	height: 0;
 	border-style: solid;
 	border-color: transparent transparent transparent rgba(70, 130, 180, 0.75);
-	border-width: 40px 0 40px 40px;
-	top: 0;
+	border-width: 20px 0 20px 20px;
+	top: 45%;
 }
 
 /* Essays */
@@ -732,7 +738,6 @@ figcaption.side-by-side {
 .art-gallery-item figcaption {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
-	text-align: center;
 }
 
 .art-gallery-item blockquote {
@@ -792,6 +797,7 @@ nav.desktop .menu-container {
 	display: flex;
     flex-flow: row;
     justify-content: space-between;
+    padding-right: 40px;
 }
 
 nav.mobile .menu-container {
@@ -1117,6 +1123,7 @@ footer div {
 		width: 44px;
 		display: block;
 		cursor: pointer;
+		padding-right: 20px;
 	}
 
 	#hamburger span {
