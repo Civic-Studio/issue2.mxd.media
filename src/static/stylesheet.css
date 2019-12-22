@@ -407,7 +407,7 @@ div.home-final-wrapper > div > article a:last-child img {
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: transparent rgba(70, 130, 180, 0.75) transparent transparent;
+    border-color: transparent black transparent transparent;
     border-width: 20px 20px 20px 0;
     top: 45%;
 }
@@ -417,7 +417,7 @@ div.home-final-wrapper > div > article a:last-child img {
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-color: transparent transparent transparent rgba(70, 130, 180, 0.75);
+	border-color: transparent transparent transparent black;
 	border-width: 20px 0 20px 20px;
 	top: 45%;
 }
