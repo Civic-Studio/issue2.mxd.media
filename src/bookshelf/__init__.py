@@ -1,6 +1,7 @@
 # Bookshelf Flask Combo
 from flask import Flask, url_for, request
 from bookshelf.app.controllers import main
+import os
 
 # Compress
 from flask_compress import Compress
@@ -43,5 +44,9 @@ app.register_blueprint(main, url_prefix='')
 app.config['CDN_URL'] = 'https://cdn.mxd.media/'
 app.config['CDN_HASH'] = '-12192019'
 
-Talisman(app, content_security_policy=csp)
-Compress(app)
+# Only apply Talisman and Compress when not freezing the site
+# Talisman forces HTTPS redirects which breaks Frozen-Flask,
+# and Compress can interfere with the static file output.
+if not os.environ.get('FLASK_FREEZE'):
+    Talisman(app, content_security_policy=csp)
+    Compress(app)
