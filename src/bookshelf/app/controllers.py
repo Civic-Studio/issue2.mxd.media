@@ -6,10 +6,21 @@ site_name = 'Issue 2 from Mixed Media: Water Systems'
 fb_admin = '12345678'
 
 current_path = os.getcwd()
-if env == "development":
-	home_page_content = json.load(open(current_path + '/src/json/content.json'))
-else:
-	home_page_content = json.load(open(current_path + '/json/content.json'))
+possible_paths = [
+    os.path.join(current_path, 'src', 'json', 'content.json'),
+    os.path.join(current_path, 'json', 'content.json'),
+    os.path.join(current_path, '..', 'src', 'json', 'content.json')
+]
+home_page_content = None
+for p in possible_paths:
+    try:
+        with open(p) as f:
+            home_page_content = json.load(f)
+            break
+    except FileNotFoundError:
+        continue
+if home_page_content is None:
+    raise FileNotFoundError("content.json not found in known locations: {}".format(possible_paths))
 
 main = Blueprint('main', __name__, template_folder='../../templates', static_folder='../../static')
 
