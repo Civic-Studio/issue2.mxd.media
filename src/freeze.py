@@ -1,31 +1,38 @@
-"""
-Frozen-Flask build script.
+"""Frozen-Flask build script.
 
 Renders all Flask routes to static HTML files for deployment
 to GitHub Pages (or any static file host).
 
 Usage:
-    cd src/
-    python freeze.py
+  cd src/
+  python freeze.py
 """
 
 import os
-import sys
 import shutil
+
+from bookshelf import app
+from flask_frozen import Freezer
 
 # Tell the app not to apply Talisman/Compress during freezing
 os.environ['FLASK_FREEZE'] = '1'
 # Use production path for content.json loading
 os.environ['FLASK_ENV'] = 'production'
 
-from bookshelf import app
-from flask_frozen import Freezer
-
 # Configure the build output directory
 BUILD_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'build')
 app.config['FREEZER_DESTINATION'] = BUILD_DIR
-app.config['FREEZER_BASE_URL'] = 'https://issue2.mxd.media/'
-app.config['FREEZER_RELATIVE_URLS'] = False
+
+# Multi-domain support via environment override
+# If GH_PAGES_BASE_URL is set, generate absolute URLs from that base.
+# Otherwise, generate relative URLs for maximum compatibility across domains.
+ENV_BASE_URL = os.environ.get('GH_PAGES_BASE_URL')
+if ENV_BASE_URL:
+    app.config['FREEZER_BASE_URL'] = ENV_BASE_URL
+    app.config['FREEZER_RELATIVE_URLS'] = False
+else:
+    app.config['FREEZER_RELATIVE_URLS'] = True
+
 app.config['FREEZER_REMOVE_EXTRA_FILES'] = True
 
 freezer = Freezer(app)
@@ -61,20 +68,23 @@ def gallery_urls():
 
 
 def copy_extras():
-    """Copy extra files into the build directory (CNAME, 404, etc.)."""
+    """Copy extra files into the build directory (404, etc.)."""
     extras_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'extras')
-
-    # Copy 404.html if it exists
     notfound_src = os.path.join(extras_dir, '404.html')
     if os.path.exists(notfound_src):
         shutil.copy2(notfound_src, os.path.join(BUILD_DIR, '404.html'))
         print('  Copied 404.html')
 
-    # Write CNAME file for GitHub Pages custom domain
-    cname_path = os.path.join(BUILD_DIR, 'CNAME')
-    with open(cname_path, 'w') as f:
-        f.write('issue2.mxd.media\n')
-    print('  Wrote CNAME')
+    # Conditional CNAME: only write if using a custom domain (not the default github.io)
+    write_cname = False
+    if ENV_BASE_URL:
+        if not ENV_BASE_URL.endswith('.github.io'):
+            write_cname = True
+    if write_cname:
+        cname_path = os.path.join(BUILD_DIR, 'CNAME')
+        with open(cname_path, 'w') as f:
+            f.write(ENV_BASE_URL.rstrip('/') + '\n')
+        print('  Wrote CNAME: {}'.format(ENV_BASE_URL))
 
 
 if __name__ == '__main__':
