@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request
 import os, json
 
-env = os.environ['FLASK_ENV'] or 'development'
+env = os.environ.get('FLASK_ENV', 'development')
 site_name = 'Issue 2 from Mixed Media: Water Systems'
 fb_admin = '12345678'
 
@@ -37,15 +37,15 @@ def show_index():
 		home_page_content=home_page_content
 	)
 
-@main.route('/essay/<title>')
+@main.route('/essay/<title>/')
 def show_essays(title=None):
 	return render_template('essay.html', title=title)
 
-@main.route('/gallery/<series>')
+@main.route('/gallery/<series>/')
 def show_galleries(series=None):
 	return render_template('gallery.html', series=series)
 
-@main.route('/people')
+@main.route('/people/')
 def show_artists():
 	metadata_name = {
 		'keywords': 'New Orleans artists, Mixed Media, CFreedom, Maggie Hermann, Ann Nelson, art and media',
@@ -70,7 +70,7 @@ def show_artists():
 		metadata_property=metadata_property
 	)
 
-@main.route('/project')
+@main.route('/project/')
 def show_projects():
 	metadata_name = {
 		'keywords': 'New Orleans artists, Mixed Media, SWBNO, Sewerage Water Board New Orleans, water management',

@@ -1,7 +1,7 @@
 from bookshelf import app
 import os
 
-env = os.environ['FLASK_ENV'] or 'development'
+env = os.environ.get('FLASK_ENV', 'development')
 
 if env == "development":
 	app.config.update(
@@ -10,4 +10,4 @@ if env == "development":
 	)
 
 if __name__ == '__main__':
-    app.run() 
+    app.run()
